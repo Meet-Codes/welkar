@@ -20,10 +20,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     opcache \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Enable Apache mod_rewrite for routing
-RUN a2enmod rewrite
+# Enable Apache modules required for routing, security headers, caching, and compression
+RUN a2enmod rewrite headers expires deflate
 
-# Configure Apache DocumentRoot to point to /public
+# Configure Production PHP Settings
+RUN { \
+    echo 'expose_php=Off'; \
+    echo 'display_errors=Off'; \
+    echo 'log_errors=On'; \
+    echo 'error_log=/var/www/html/storage/logs/php_errors.log'; \
+    echo 'memory_limit=256M'; \
+    echo 'upload_max_filesize=32M'; \
+    echo 'post_max_size=32M'; \
+    echo 'max_execution_time=60'; \
+    echo 'opcache.enable=1'; \
+    echo 'opcache.memory_consumption=128'; \
+    echo 'opcache.interned_strings_buffer=8'; \
+    echo 'opcache.max_accelerated_files=4000'; \
+    echo 'opcache.revalidate_freq=2'; \
+    echo 'session.cookie_httponly=1'; \
+    echo 'session.cookie_samesite=Lax'; \
+} > /usr/local/etc/php/conf.d/welkar-prod.ini
+
+# Configure Apache DocumentRoot to point strictly to /public
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf \
     && sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf

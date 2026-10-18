@@ -227,4 +227,16 @@ return function (Router $router) {
 
     // 6. External Webhooks
     $router->post('/webhooks/razorpay', [RazorpayWebhookController::class, 'handle']);
+
+    // 7. System Health Check Endpoint for Render & Load Balancers
+    $router->get('/healthz', function () {
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode([
+            'status' => 'healthy',
+            'service' => 'Welkar Timepieces E-Commerce',
+            'php_version' => PHP_VERSION,
+            'timestamp' => time()
+        ]);
+        exit;
+    });
 };
