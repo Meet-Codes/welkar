@@ -1,0 +1,8 @@
+.git
+.env
+.gitignore
+*.log
+tests/
+scratch/
+database/*.sql
+storage/backups/

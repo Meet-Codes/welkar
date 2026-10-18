@@ -4,6 +4,7 @@
 /storage/imports/*
 /storage/backups/*
 /storage/uploads/*
+/storage/sessions/*
 !.gitkeep
 .env
 .DS_Store
