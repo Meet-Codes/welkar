@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Noto+Serif:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-high": "#e2e7ff",
+          "tertiary-fixed": "#ffdad8",
+          "on-primary": "#ffffff",
+          "crimson-hover": "#C92A37",
+          "outline-variant": "#c6c6ce",
+          "inverse-surface": "#283044",
+          "surface-container-low": "#f2f3ff",
+          "primary": "#000000",
+          "dial-silver": "#E2E8F0",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed": "#131a33",
+          "surface-canvas": "#F8FAFC",
+          "surface-container-highest": "#dae2fd",
+          "surface-variant": "#dae2fd",
+          "outline": "#76767e",
+          "surface-dim": "#d2d9f4",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#dbe1ff",
+          "on-secondary-fixed": "#111a36",
+          "on-tertiary-container": "#f1414d",
+          "surface-tint": "#565d79",
+          "on-secondary-fixed-variant": "#3d4664",
+          "on-primary-fixed-variant": "#3e4660",
+          "inverse-on-surface": "#eef0ff",
+          "on-tertiary-fixed": "#410007",
+          "surface-container-lowest": "#ffffff",
+          "crimson-accent": "#E63946",
+          "background": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "on-background": "#131b2e",
+          "surface-card": "#FFFFFF",
+          "tertiary": "#000000",
+          "midnight-navy": "#0B132B",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "slate-steel": "#475569",
+          "primary-container": "#131a33",
+          "secondary-container": "#d0d9fd",
+          "tertiary-fixed-dim": "#ffb3b1",
+          "on-secondary-container": "#555e7d",
+          "inverse-primary": "#bec5e5",
+          "error": "#ba1a1a",
+          "primary-fixed-dim": "#bec5e5",
+          "on-surface": "#131b2e",
+          "surface-container": "#eaedff",
+          "primary-fixed": "#dbe1ff",
+          "on-surface-variant": "#45464d",
+          "surface": "#faf8ff",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#92001c",
+          "border-subtle": "#E2E8F0",
+          "secondary-fixed-dim": "#bdc5e9",
+          "secondary": "#545d7c",
+          "on-primary-container": "#7b83a0",
+          "tertiary-container": "#410007"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "3rem",
+          "space-md": "1rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Noto Serif"
+          ],
+          "label-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg": [
+            "Noto Serif"
+          ],
+          "display-lg-mobile": [
+            "Noto Serif"
+          ],
+          "label-lg": [
+            "Hanken Grotesk"
+          ],
+          "label-md": [
+            "Hanken Grotesk"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "display-lg": [
+            "Noto Serif"
+          ],
+          "headline-lg-mobile": [
+            "Noto Serif"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "title-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Noto Serif"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-midnight-navy text-on-primary py-1.5 px-4 overflow-hidden"><div class="w-full flex items-center justify-between text-center font-label-sm text-label-sm tracking-widest uppercase"><div class="hidden md:flex items-center gap-2"><span class="material-symbols-outlined text-crimson-accent text-[14px]">local_shipping</span><span>Complimentary Insured Shipping Across India</span></div><div class="flex items-center justify-center gap-6 mx-auto"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-crimson-accent text-[14px]">payments</span> Cash On Delivery (COD) Available</span><span class="hidden sm:inline text-slate-steel">•</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-crimson-accent text-[14px]">verified</span> 7-Day Hassle-Free Returns</span></div><div class="hidden md:flex items-center gap-2"><span class="material-symbols-outlined text-crimson-accent text-[14px]">shield</span><span>2-Year Movement Warranty</span></div></div></div><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-3" data-path="home" href="#"><img alt="Image from https://www.welkar.in/cdn/shop/files/logo_WELKAR.png?v=1791119781&amp;width=600" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XU_AQxB16S_IvE5aiRUEhvHO6_JkAQM_RP7SIrXD4BJRB36ey59vOhCXkjBQXA1qGoklaFdAW4yffNgABRz7wtRnFXXAjpJ-BrovKf83n0ggfQKjGooUOsor0IvqLzoZ81iBUHJWdLYN7ErRb_blF2sEJlDPNRkgqVP6ZUgVGrPmxqOXUSHLRT0Rk-JbtXb_S_kOAQjNKlUV94hC1UxgjNLLhlVD9CEiBQJ0NB7IZ8L3wBQxHPxmRrP-E"/><span class="font-headline-sm text-headline-sm tracking-tight text-midnight-navy hidden lg:inline-block font-semibold">WELKAR</span></a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-midnight-navy text-on-primary font-label-md"><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="mens-watches" href="#">Men's Watches</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="womens-watches" href="#">Women's Watches</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids-and-youth" href="#">Kids &amp; Youth</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="unisex-and-minimalist" href="#">Unisex &amp; Minimalist</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="offers" href="#">Offers</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden sm:block w-48 md:w-64"><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface" placeholder="Search precision timepieces..." type="text"/><span class="material-symbols-outlined absolute left-2.5 top-2 text-slate-steel text-[18px]">search</span></div><a class="relative p-2 rounded-lg text-slate-steel hover:text-midnight-navy hover:bg-surface-container-low transition-colors" data-path="wishlist" href="#" title="Wishlist"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-crimson-accent text-on-tertiary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><a class="relative p-2 rounded-lg text-slate-steel hover:text-midnight-navy hover:bg-surface-container-low transition-colors" data-path="cart-drawer" href="#" title="Shopping Cart"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-midnight-navy text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><a class="p-1 rounded-lg hover:bg-surface-container-low transition-colors" data-path="account" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="w-full pt-20 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner / Breadcrumb & Header Ribbon -->
+<section class="w-full bg-surface-container-low py-space-sm px-margin">
+<div class="w-full flex flex-wrap items-center justify-between gap-4 font-body-sm text-body-sm text-slate-steel">
+<div class="flex items-center gap-2">
+<a class="hover:text-midnight-navy transition-colors font-medium" href="#">Home</a>
+<span>/</span>
+<a class="hover:text-midnight-navy transition-colors font-medium" href="#">Catalog</a>
+<span>/</span>
+<span class="text-midnight-navy font-semibold">Flagship Timepieces &amp; Essentials</span>
+</div>
+<div class="flex items-center gap-6 font-label-md text-label-md uppercase tracking-wider text-slate-steel">
+<span class="flex items-center gap-1.5 text-midnight-navy font-bold">
+<span class="material-symbols-outlined text-crimson-accent text-[18px]">verified_user</span> 100% Authentic Guaranteed
+        </span>
+<span class="hidden md:inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span> Dispatch in 24 Hrs
+        </span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Section -->
+<section class="w-full bg-surface-card py-space-xl px-margin relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full">
+<span class="w-2 h-2 rounded-full bg-crimson-accent animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-midnight-navy uppercase tracking-widest font-bold">The Precision Collection • 2025 Release</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-midnight-navy tracking-tight leading-tight">
+          Precision Engineering. <br class="hidden sm:inline"/>
+<span class="italic font-normal text-slate-steel">Timeless Craft.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-slate-steel max-w-xl">
+          Discover engineered stainless steel, high-precision Japanese quartz movements, and hydrostatic waterproof timepieces calibrated for everyday distinction across Men, Women, Kids, and Unisex lifestyles.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<a class="px-6 py-3 bg-midnight-navy text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-slate-steel transition-all flex items-center gap-2" href="#catalog-grid">
+<span>Explore All 4 Creations</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="px-6 py-3 bg-surface-container-low text-midnight-navy hover:bg-surface-container font-label-lg text-label-lg rounded-lg transition-colors flex items-center gap-2" href="#lab-engineering">
+<span class="material-symbols-outlined text-crimson-accent text-[20px]">biotech</span>
+<span>Hydro-Pressure Lab</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-4 pt-space-md max-w-lg">
+<div class="p-3 bg-surface-container-low rounded-lg space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">316L</div>
+<div class="font-label-sm text-label-sm text-slate-steel">Surgical Steel</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">30M</div>
+<div class="font-label-sm text-label-sm text-slate-steel">Water Resistant</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">₹799+</div>
+<div class="font-label-sm text-label-sm text-slate-steel">Accessible Luxury</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative bg-surface-container-low rounded-xl p-6 shadow-xl overflow-hidden group">
+<div class="absolute top-4 right-4 z-20 bg-crimson-accent text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">
+            Flagship Special
+          </div>
+<div class="aspect-square w-full relative flex items-center justify-center overflow-hidden rounded-lg bg-surface-card">
+<img alt="Welkar Men's All-Black Square Dial Analog Quartz Watch" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1Wi6_1lR_TQ6u9IpHXhEEWiaM881enzdEsARDN_Qza02gqdnQwHb6F91BVg41i4uBS2pp0OoLADlIurcTZkXgu4Dt-r0RDs3_4C9U97-gJ3CGTkoZvvQWPZp0mqocmlvCxyxcWYlTt56A8C1w8NgzRCv6YfDmmlWpK884GnFSrFCd8k3997l9U34lNcY_M8xqSdpvTaPf5SP0l6VwUpZBijIo-H2zv1ZSjvhDDzwxZa3EnhNrLuomLJ0q9u"/>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel">Signature Model</p>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold">Welkar Stealth Square Dial</h3>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">₹899.00</span>
+<span class="block font-label-sm text-label-sm text-slate-steel line-through">₹1,499.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Category Spotlight Cards -->
+<section class="w-full bg-surface-canvas py-space-xl px-margin">
+<div class="w-full space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-crimson-accent font-bold">Curation by Persona</span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy tracking-tight">Atelier Pillars</h2>
+</div>
+<p class="font-body-md text-body-md text-slate-steel max-w-md">
+          Thoughtfully segmented time-telling instruments engineered with tailored proportions, ergonomic link chains, and distinctive dials.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category 1 -->
+<div class="group bg-surface-card rounded-xl p-5 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between h-full">
+<div>
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-low mb-4 relative">
+<img alt="Men's Horology collection preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WfYB-rzYgxR_9Rc9jZ6GgkOZI-kFcSM02mQ4HE8BAVJXmEk7cJpf01iatPq7CDRwnYxaoCrsjMGZb1zxIRxvq0aS429sfrfCJ-DEnW6AcTCYhlYskkLYqQmLcaRiY0e9I1dfKoqh-zDaOSaF38zZrPKVVDWQhjoi3FFXWNDnlac73S0Zj3WhywzI8GpomphgAevjYjGG3sfNo7pK4Y27n0kBhZM-Z7UdIbfcFa5fkOCbI-sjZY4q0vs8vj"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 bg-midnight-navy/90 text-on-primary font-label-sm text-label-sm rounded uppercase">Active Catalog</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">Men's Horology</h3>
+<p class="font-body-sm text-body-sm text-slate-steel mt-2">
+              Bold square silhouettes, heavy stainless steel link chains, day-date apertures, and high-impact sports dials.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-midnight-navy font-label-md text-label-md font-semibold">
+<span>Explore 3 Models</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="group bg-surface-card rounded-xl p-5 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between h-full">
+<div>
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-low mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-fashion macro photograph of an elegant women's watch in rose gold with shimmering mother of pearl dial and stainless steel mesh bracelet on velvet display in soft studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIceFGqYLBIOerRGYd1s1kF3HOcgKHH2JeAb2enCmj2ubZsimx3Rwzbh167kA76R7oX-ODED63BrmybzyleW_3C08GInBSX7ViyNG-JFZ4jOPkXYoNp8Denwv47EWNnWgVrckoODYst0l2cI7MHsohW6mi6ZIhGl9OUnIX4m-ykIhkzGeeR26VlMFuFPvtIG5aacQ57JHmQAPA_TS8JZ7SLYN3YCcYllWEJ1yHwGCc6CiWvpu9xSRKbw"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 bg-surface-container-highest text-midnight-navy font-label-sm text-label-sm rounded uppercase font-semibold">New Capsule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">Women's Grace</h3>
+<p class="font-body-sm text-body-sm text-slate-steel mt-2">
+              Petite 28mm-32mm casings, delicate magnetic and jewelry mesh bands, finished in rose gold, champagne, and silver.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-midnight-navy font-label-md text-label-md font-semibold">
+<span>Preview Atelier</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="group bg-surface-card rounded-xl p-5 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between h-full">
+<div>
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-low mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant youth sports analog watch with shock resistant silicone strap, dynamic luminous numbers, submerged in crystal clear water droplets, bold clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnmgm_3WxtZl1GaTRl2YNufmQFBd3HATE4yHre-j09_K6GNhgsTKcHxKH8NqaiEok3kziZQt8-j4io_hJaayYk8_vnQL0EAaHezxa-oxv_YQ32odGAiIbs31ANEyXnSHa9iV2bvBu9g88boLnNO0Sqv72OHrQp63HPj8zPFd24ccZ7Mc9h51NeyTxMmMQfaN2WV7Q9oGeI_2M6kgFI0nc8jHxubDnHmLxIisGmIWnMiKeGT2Gmx7Ayiw"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 bg-surface-container-highest text-midnight-navy font-label-sm text-label-sm rounded uppercase font-semibold">Active Series</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">Kids &amp; Youth</h3>
+<p class="font-body-sm text-body-sm text-slate-steel mt-2">
+              Reinforced shock-absorbing bezels, vibrant ergonomic bands, high-contrast easy-read numerals, and swim-proof seals.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-midnight-navy font-label-md text-label-md font-semibold">
+<span>Discover Series</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="group bg-surface-card rounded-xl p-5 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between h-full">
+<div>
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-low mb-4 relative">
+<img alt="Welkar travel organizer and unisex utility kit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VuHvP2C1P94Dmq4KCZ8cFVnF3fDliGE205O2bqSCOzX76Nnm72EUzDAISupdURYV8hp06yvFLv47aSI4-W96egLGRAhejhhkBLC9HJ3HHKOkbBXAowcGlDZPug7kLf8oLdDRebtlctVnw2IAr1SA7SUHPdduPbltKxxWRsML4ncCs1QYKw4PeMmlJ3IeO6YlBvoNmbqmUolGF_sp1gPcKJNKsQ_Z655mKR7Z8hFKnBGFk4aBLUneKhyqdb"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 bg-midnight-navy/90 text-on-primary font-label-sm text-label-sm rounded uppercase">Travel Essential</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">Travel &amp; Organizers</h3>
+<p class="font-body-sm text-body-sm text-slate-steel mt-2">
+              High-frequency welded transparent cosmetic washbags and modular waterproof pouches for timepiece transport.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-midnight-navy font-label-md text-label-md font-semibold">
+<span>Shop Set (3-Piece)</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lab Precision Engineering & Waterproof Strip -->
+<section class="w-full bg-midnight-navy text-on-primary py-space-xl px-margin relative overflow-hidden" id="lab-engineering">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-crimson-accent text-[24px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-dial-silver font-bold">Tested Under Strict Lab Conditions</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary font-serif">
+          Hydro-Pressure Precision Engineering
+        </h2>
+<p class="font-body-md text-body-md text-dial-silver leading-relaxed">
+          Every Welkar timepiece is assembled with high-grade gaskets, O-ring sealed crowns, and tested through simulated 30M hydrostatic submersion tanks. Whether facing monsoon rains, daily handwashes, or pool splashes, our casing integrity preserves the Japanese quartz movement untouched.
+        </p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-4 bg-primary-container rounded-lg space-y-1">
+<div class="flex items-center gap-2 text-crimson-accent font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+<span>30M Hydrostatic</span>
+</div>
+<p class="font-body-sm text-body-sm text-dial-silver">Calibrated against everyday splash and submersions with high-density seals.</p>
+</div>
+<div class="p-4 bg-primary-container rounded-lg space-y-1">
+<div class="flex items-center gap-2 text-crimson-accent font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">hardware</span>
+<span>316L Solid Steel</span>
+</div>
+<p class="font-body-sm text-body-sm text-dial-silver">Corrosion-resistant steel alloy with hypoallergenic ion-plated finish.</p>
+</div>
+<div class="p-4 bg-primary-container rounded-lg space-y-1">
+<div class="flex items-center gap-2 text-crimson-accent font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">format_image_left</span>
+<span>Hardlex Crystal</span>
+</div>
+<p class="font-body-sm text-body-sm text-dial-silver">Impact and scratch-resistant hardened mineral crystal for pristine clarity.</p>
+</div>
+<div class="p-4 bg-primary-container rounded-lg space-y-1">
+<div class="flex items-center gap-2 text-crimson-accent font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+<span>Japanese Quartz</span>
+</div>
+<p class="font-body-sm text-body-sm text-dial-silver">Calibrated timekeeping accuracy within ±15 seconds per month.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="bg-primary-container rounded-xl p-4 shadow-2xl relative overflow-hidden group">
+<div class="aspect-4/3 w-full rounded-lg overflow-hidden bg-black flex items-center justify-center">
+<img alt="Welkar hydro-pressure water resistance laboratory demonstration" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UwNZSw-BUbK6EZbqKFThAgwyPEuljGHX9qn0Q-TyOXjR9MK8rSWacZCNS5aF5-Z7gKHlg7Q6NqDxUYygsnPDIB86g-QMJVXKtnER-tlc-ZbD-HqlDjGab7nWaOh1MbPwmz7nYteAZhcN-TCIX24kBSk8B3rR9DMjA0Ssk_L8g9U13YQg5H1faoaZIS6A4g7p-MqT3mVtZ5zZte-XB8waRHzwMWtBk6W3TrLLVAs27gz7HS1q2CDdGwynP0"/>
+</div>
+<div class="mt-4 flex items-center justify-between text-dial-silver font-body-sm text-body-sm px-2">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-crimson-accent"></span> Real Hydro-Pressure Submersion Testing</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary">Lab Certificate: WK-30M-OK</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Product Catalog & Interactive Storefront Filter -->
+<section class="w-full bg-surface-canvas py-space-xl px-margin" id="catalog-grid">
+<div class="w-full space-y-space-md">
+<!-- Section Title & Meta Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-slate-steel font-bold">Live Inventory</span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy tracking-tight">Collection: Products</h2>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-slate-steel font-semibold">Displaying <span class="text-midnight-navy font-bold">4 Verified Products</span> + 2 Capsule Previews</span>
+</div>
+</div>
+<!-- Segmented Category Filters Tabs -->
+<div class="w-full flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="px-5 py-2.5 rounded-lg bg-midnight-navy text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm" type="button">
+          All Products (4)
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-surface-card hover:bg-surface-container text-slate-steel font-label-md text-label-md font-medium whitespace-nowrap transition-colors" type="button">
+          Men's Analog Watches (3)
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-surface-card hover:bg-surface-container text-slate-steel font-label-md text-label-md font-medium whitespace-nowrap transition-colors" type="button">
+          Travel &amp; Organization (1)
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-surface-card hover:bg-surface-container text-slate-steel font-label-md text-label-md font-medium whitespace-nowrap transition-colors" type="button">
+          Square Dials
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-surface-card hover:bg-surface-container text-slate-steel font-label-md text-label-md font-medium whitespace-nowrap transition-colors" type="button">
+          Round Chrono Silhouettes
+        </button>
+</div>
+<!-- Filter Controls Bar -->
+<div class="w-full bg-surface-card rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-4">
+<!-- Quick Filters -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Availability Pill -->
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-midnight-navy">
+<span class="font-semibold">Availability:</span>
+<span class="px-2 py-0.5 rounded bg-midnight-navy text-on-primary font-label-sm text-[10px]">In Stock (4)</span>
+</div>
+<!-- Price Range Pill -->
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-midnight-navy">
+<span class="font-semibold">Price:</span>
+<span>₹699.00 — ₹899.00</span>
+</div>
+<!-- Filter Reset -->
+<button class="text-crimson-accent font-label-sm text-label-sm hover:underline flex items-center gap-1 font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span> Reset Filters
+          </button>
+</div>
+<!-- Sorting Selector -->
+<div class="flex items-center gap-3 ml-auto">
+<label class="font-label-md text-label-md text-slate-steel" for="catalog-sort">Sort by:</label>
+<select class="px-3 py-1.5 bg-surface-container-low text-midnight-navy font-body-sm text-body-sm rounded-lg focus:outline-none cursor-pointer" id="catalog-sort">
+<option value="featured">Featured / Atelier Pick</option>
+<option value="best-selling">Best Selling</option>
+<option value="price-low">Price, low to high</option>
+<option value="price-high">Price, high to low</option>
+<option value="alphabetical">Alphabetically, A-Z</option>
+<option value="newest">Date, new to old</option>
+</select>
+</div>
+</div>
+<!-- Main Product Grid: 4 Actual Products + 2 Previews -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter pt-4">
+<!-- PRODUCT 1: Welkar Men's All-Black Square Dial -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+<div>
+<!-- Top Badges & Wishlist -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-midnight-navy text-on-primary font-label-sm text-[10px] uppercase font-bold tracking-wider">Bestseller</span>
+<span class="px-2 py-0.5 rounded bg-crimson-accent/10 text-crimson-accent font-label-sm text-[10px] uppercase font-bold tracking-wider">Save 40%</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" title="Save to Wishlist" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Image Container -->
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img alt="Welkar Men's All-Black Square Dial Analog Quartz Watch with Stainless Steel Chain Strap" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wi6_1lR_TQ6u9IpHXhEEWiaM881enzdEsARDN_Qza02gqdnQwHb6F91BVg41i4uBS2pp0OoLADlIurcTZkXgu4Dt-r0RDs3_4C9U97-gJ3CGTkoZvvQWPZp0mqocmlvCxyxcWYlTt56A8C1w8NgzRCv6YfDmmlWpK884GnFSrFCd8k3997l9U34lNcY_M8xqSdpvTaPf5SP0l6VwUpZBijIo-H2zv1ZSjvhDDzwxZa3EnhNrLuomLJ0q9u"/>
+<div class="absolute bottom-2 left-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-crimson-accent">water_drop</span> 30M Waterproof
+                </span>
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">calendar_month</span> Day-Date
+                </span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Men's &amp; Boy's</span>
+<div class="flex items-center gap-1 text-amber-600 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8 (142)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug group-hover:text-crimson-accent transition-colors">
+                Welkar Men's All-Black Square Dial Analog Quartz Watch with Stainless Steel Chain Strap
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 899.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 1,499.00</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-4 mt-2 space-y-2">
+<button class="w-full py-2.5 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all flex items-center justify-center gap-2" onclick="handleAddToCart('Welkar Men\'s All-Black Square Dial Watch', '899.00')" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="w-full py-1.5 bg-transparent hover:bg-surface-container text-slate-steel font-label-sm text-label-sm rounded-lg transition-colors" type="button">
+              Quick View Specifications
+            </button>
+</div>
+</article>
+<!-- PRODUCT 2: Welkar Men's Silver Quartz Analog Watch -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+<div>
+<!-- Top Badges & Wishlist -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-midnight-navy font-label-sm text-[10px] uppercase font-bold tracking-wider">Classic Series</span>
+<span class="px-2 py-0.5 rounded bg-crimson-accent/10 text-crimson-accent font-label-sm text-[10px] uppercase font-bold tracking-wider">Save 38%</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" title="Save to Wishlist" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Image Container with Alternate Flip Effect on Hover -->
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img alt="Welkar Men's Silver Quartz Analog Watch – Black Dial with Day &amp; Date Display" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1WfYB-rzYgxR_9Rc9jZ6GgkOZI-kFcSM02mQ4HE8BAVJXmEk7cJpf01iatPq7CDRwnYxaoCrsjMGZb1zxIRxvq0aS429sfrfCJ-DEnW6AcTCYhlYskkLYqQmLcaRiY0e9I1dfKoqh-zDaOSaF38zZrPKVVDWQhjoi3FFXWNDnlac73S0Zj3WhywzI8GpomphgAevjYjGG3sfNo7pK4Y27n0kBhZM-Z7UdIbfcFa5fkOCbI-sjZY4q0vs8vj"/>
+<div class="absolute top-2 right-2 p-1 bg-surface-card/90 rounded-full shadow-sm text-slate-steel text-[12px] flex items-center" title="Includes Stainless Back Plate View">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">calendar_view_day</span> Dual Window
+                </span>
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">light_mode</span> Luminous
+                </span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Silver Steel</span>
+<div class="flex items-center gap-1 text-amber-600 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (98)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug group-hover:text-crimson-accent transition-colors">
+                Welkar Men's Silver Quartz Analog Watch – Black Dial with Day &amp; Date Display
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 799.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 1,299.00</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-4 mt-2 space-y-2">
+<button class="w-full py-2.5 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all flex items-center justify-center gap-2" onclick="handleAddToCart('Welkar Men\'s Silver Quartz Watch', '799.00')" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="w-full py-1.5 bg-surface-container-low hover:bg-surface-container text-midnight-navy font-label-sm text-label-sm rounded-lg transition-colors flex items-center justify-center gap-1" onclick="showBackplateModal()" type="button">
+<span class="material-symbols-outlined text-[14px]">flip_camera_android</span> View Back Plate
+              </button>
+</div>
+</div>
+</article>
+<!-- PRODUCT 3: Welkar Men's Teal Dial Watch -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+<div>
+<!-- Top Badges & Wishlist -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-emerald-900 text-on-primary font-label-sm text-[10px] uppercase font-bold tracking-wider">Trending Dial</span>
+<span class="px-2 py-0.5 rounded bg-crimson-accent/10 text-crimson-accent font-label-sm text-[10px] uppercase font-bold tracking-wider">Save 44%</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" title="Save to Wishlist" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Image Container -->
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" data-alt="High-end product photograph of a Welkar men's analog watch featuring an exquisite emerald teal sunburst dial, day and date aperture, polished stainless steel link bracelet sitting proudly inside an open silver luxury presentation gift box with satin cushion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1xQMZ-2doAeGXhfWF500WVip3Ht__caLp4SK003oZtbA7hL0-lzssc3zYthsXxFUn4CFO_JAH7ZZN8hiSpTrrN3ITJurWZ1XQyvONAzwnbhD-j3r2Bid4RqKahlQBNw9-Vh4N5V8E-aLjyX3M8TVgiUgbY1kdYWlIioyjhPNx9Lpv3-VRlYkf8QNBMDNRPQsEsWv8emFB6b0BKzfi9oRfiPGmyY4h3VW0rk43jx7zqCKQ8Tbm9EVk9Q"/>
+<div class="absolute bottom-2 left-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-amber-400">featured_seasonal_and_gifts</span> Luxury Box Included
+                </span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Sunray Teal</span>
+<div class="flex items-center gap-1 text-amber-600 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (76)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug group-hover:text-crimson-accent transition-colors">
+                Welkar Men’s Quartz Analog Watch – Teal Dial with Day &amp; Date Display, Silver Metal Strap
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 899.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 1,599.00</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-4 mt-2 space-y-2">
+<button class="w-full py-2.5 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all flex items-center justify-center gap-2" onclick="handleAddToCart('Welkar Men\'s Teal Dial Watch', '899.00')" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="w-full py-1.5 bg-transparent hover:bg-surface-container text-slate-steel font-label-sm text-label-sm rounded-lg transition-colors" type="button">
+              Quick View Specifications
+            </button>
+</div>
+</article>
+<!-- PRODUCT 4: Welkar 3-Piece Transparent Travel Washbag -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+<div>
+<!-- Top Badges & Wishlist -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-midnight-navy font-label-sm text-[10px] uppercase font-bold tracking-wider">Organizer Set</span>
+<span class="px-2 py-0.5 rounded bg-crimson-accent/10 text-crimson-accent font-label-sm text-[10px] uppercase font-bold tracking-wider">Save 30%</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" title="Save to Wishlist" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Image Container -->
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img alt="Welkar 3-Piece Transparent Travel Washbag &amp; Cosmetic Organizer Set – Light Blue" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1VuHvP2C1P94Dmq4KCZ8cFVnF3fDliGE205O2bqSCOzX76Nnm72EUzDAISupdURYV8hp06yvFLv47aSI4-W96egLGRAhejhhkBLC9HJ3HHKOkbBXAowcGlDZPug7kLf8oLdDRebtlctVnw2IAr1SA7SUHPdduPbltKxxWRsML4ncCs1QYKw4PeMmlJ3IeO6YlBvoNmbqmUolGF_sp1gPcKJNKsQ_Z655mKR7Z8hFKnBGFk4aBLUneKhyqdb"/>
+<div class="absolute bottom-2 left-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">layers</span> 3 Nested Sizes
+                </span>
+<span class="px-2 py-1 bg-midnight-navy/90 text-on-primary text-[10px] rounded font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">water</span> Water Resistant
+                </span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Travel Gear</span>
+<div class="flex items-center gap-1 text-amber-600 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (210)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug group-hover:text-crimson-accent transition-colors">
+                Welkar 3-Piece Transparent Travel Washbag &amp; Cosmetic Organizer Set – Light Blue
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 699.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 999.00</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-4 mt-2 space-y-2">
+<button class="w-full py-2.5 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all flex items-center justify-center gap-2" onclick="showOrganizerModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Choose Options &amp; Dimensions</span>
+</button>
+<button class="w-full py-1.5 bg-surface-container-low hover:bg-surface-container text-midnight-navy font-label-sm text-label-sm rounded-lg transition-colors flex items-center justify-center gap-1 font-semibold" onclick="handleAddToCart('Welkar 3-Piece Organizer Set (Light Blue)', '699.00')" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Instant Checkout
+            </button>
+</div>
+</article>
+<!-- PRODUCT 5 (Preview Capsule): Welkar Women's Rose Gold Petite Mesh -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative opacity-95">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary-container font-label-sm text-[10px] uppercase font-bold tracking-wider">Capsule Preview</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-slate-steel font-label-sm text-[10px] uppercase font-bold tracking-wider">Ships Next Week</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" data-alt="Exquisite studio shot of a petite rose gold women's watch with mother of pearl minimalist face and stainless steel Milanese magnetic mesh band on soft blush velvet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG-jRkcvm9qLIXr0xiMwV5gu0hB1vUcQPWlfRBEHsgIoX6tAdpqGvR3Fw-y0Q5qpPwFrs6j5CTjN5gMAHwkSS2WzQbsp60aTvMAaXIQuLFWUSADvPjLevoNq_S878LejK4MJ5UZaCdeHKSU_iWMZff_C0WZSPLshBueS9MzkxIDns2I8TmNE08FV6Zii7R44pBNpnV57sQA9f3WipvSz8LcdbTBu5_kDAg7bgPICCqbdZ_U1nKxqDUcQ"/>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Women's Heritage</span>
+<span class="font-label-sm text-label-sm text-crimson-accent font-semibold">Priority Batch</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug">
+                Welkar Women's Rose Gold Petite Milanese Mesh Watch
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 849.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 1,399.00</span>
+</div>
+</div>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full py-2.5 bg-surface-container hover:bg-midnight-navy hover:text-on-primary text-midnight-navy font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-2" onclick="alert('Priority reservation registered! You will receive an SMS upon stock dispatch.')" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+<span>Reserve Priority Allocation</span>
+</button>
+</div>
+</article>
+<!-- PRODUCT 6 (Preview Capsule): Welkar Youth Active Sport Watch -->
+<article class="group bg-surface-card rounded-xl p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative opacity-95">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-midnight-navy font-label-sm text-[10px] uppercase font-bold tracking-wider">Youth Active</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-slate-steel font-label-sm text-[10px] uppercase font-bold tracking-wider">Shock-Proof</span>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-low text-slate-steel hover:text-crimson-accent transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="aspect-square w-full rounded-lg overflow-hidden bg-surface-container-low relative flex items-center justify-center p-2 mb-4 group-hover:bg-surface-container transition-colors">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded" data-alt="Rugged stylish black and cobalt blue youth sports watch with dual digital analog dial, silicone strap with water splash droplets in dynamic athletic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxuw_h0yWcsBkknHh1AWa6bsAgPfzOVRDF6-aTtMLbnfS-9RPuyf4AqqCQ78gADaqoSOoOSDDnwGgB05TlCZolQc1g7eW5QAqZ4Y1KiPHVn0adigYMyC84F3LuzMtVF3lgMU9aTBgyenuoM_qbY45Z2lrpZmv07IT0SszYzyjSYI_2lr85TATbkB5CaHrAUJ44PlByunxKD03mb_DAw661cFgQMuW92DAiVpAVD_u1RTehRDvP2musEg"/>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-slate-steel">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Kids &amp; Youth</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold">50M Active Grade</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold line-clamp-2 leading-snug">
+                Welkar Youth Dual-Display Chrono Sport Watch – Arctic Blue
+              </h3>
+<div class="pt-2 flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Rs. 599.00</span>
+<span class="font-body-sm text-body-sm text-slate-steel line-through">Rs. 999.00</span>
+</div>
+</div>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full py-2.5 bg-surface-container hover:bg-midnight-navy hover:text-on-primary text-midnight-navy font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-2" onclick="alert('Priority reservation registered! You will receive an SMS upon stock dispatch.')" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+<span>Reserve Priority Allocation</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Interactive Trust Guarantees & Value Pillars -->
+<section class="w-full bg-surface-card py-space-xl px-margin">
+<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-12 h-12 rounded-lg bg-midnight-navy text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-midnight-navy font-bold">Pan-India Express Free COD</h4>
+<p class="font-body-sm text-body-sm text-slate-steel mt-1">Cash on Delivery option enabled for all pin codes with insured courier handling.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-12 h-12 rounded-lg bg-crimson-accent text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">published_with_changes</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-midnight-navy font-bold">Easy 7-Day Returns</h4>
+<p class="font-body-sm text-body-sm text-slate-steel mt-1">Hassle-free doorstep exchanges and unconditional returns if you are unsatisfied.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-12 h-12 rounded-lg bg-midnight-navy text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-midnight-navy font-bold">1-Year Warranty Included</h4>
+<p class="font-body-sm text-body-sm text-slate-steel mt-1">Comprehensive mechanism protection covering movement accuracy and dial seals.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-12 h-12 rounded-lg bg-slate-steel text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-midnight-navy font-bold">1,200+ Verified Buyers</h4>
+<p class="font-body-sm text-body-sm text-slate-steel mt-1">Rated 4.8 / 5 across leading watch enthusiast communities in India.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Horology Enthusiast Testimonials -->
+<section class="w-full bg-surface-canvas py-space-xl px-margin">
+<div class="w-full space-y-space-lg">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-crimson-accent font-bold">Real Collector Feedback</span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy tracking-tight">On The Wrist Reviews</h2>
+<p class="font-body-md text-body-md text-slate-steel">
+          Authentic impressions from daily wearers and timepiece collectors across Mumbai, Delhi, Bengaluru, and Pune.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-card p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified Buyer
+            </span>
+</div>
+<p class="font-body-md text-body-md text-slate-steel italic">
+            "The all-black square dial looks like a watch five times its cost. The weight of the stainless steel links feels solid on the wrist, and the day-date feature clicks cleanly at midnight."
+          </p>
+<div class="pt-2 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-midnight-navy font-headline-sm">
+              AK
+            </div>
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">Anand Kulkarni</div>
+<div class="font-body-sm text-body-sm text-slate-steel">Bought: All-Black Square Dial • Mumbai</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified Buyer
+            </span>
+</div>
+<p class="font-body-md text-body-md text-slate-steel italic">
+            "The teal dial catches sunlight brilliantly. The presentation box was top notch—made for a phenomenal birthday gift. COD was smooth and arrived in 48 hours."
+          </p>
+<div class="pt-2 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-midnight-navy font-headline-sm">
+              RM
+            </div>
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">Rohan Mehta</div>
+<div class="font-body-sm text-body-sm text-slate-steel">Bought: Teal Dial Analog • Bengaluru</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified Buyer
+            </span>
+</div>
+<p class="font-body-md text-body-md text-slate-steel italic">
+            "Also picked up the 3-piece washbag kit along with the silver quartz watch. Perfect for frequent travelers. The transparent material is sturdy and fits all toiletries without leaking."
+          </p>
+<div class="pt-2 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-midnight-navy font-headline-sm">
+              PS
+            </div>
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">Priya Sharma</div>
+<div class="font-body-sm text-body-sm text-slate-steel">Bought: 3-Piece Washbag &amp; Silver Watch • Delhi</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Official Flagship Headquarters & Atelier Contact Section -->
+<section class="w-full bg-surface-card py-space-xl px-margin">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-crimson-accent font-bold">Official Headquarters</span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy tracking-tight">Get In Touch</h2>
+<p class="font-body-md text-body-md text-slate-steel">
+          We're here to help with your questions, horological specifications, bulk gifting orders, and swift 7-day returns &amp; exchanges.
+        </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-midnight-navy flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel block font-bold">Corporate &amp; Concierge Address</span>
+<p class="font-body-sm text-body-sm text-midnight-navy mt-0.5 leading-relaxed">
+                Plot No. 7, 8, 11 &amp; 14 Iconic Platina, D Block, Bandra Kurla Complex (BKC), Bandra East, Mumbai, Maharashtra, 400051, India
+              </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-midnight-navy flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel block font-bold">Direct Client Phone</span>
+<a class="font-title-md text-title-md text-midnight-navy hover:text-crimson-accent font-semibold transition-colors" href="tel:+9198987654445">
+                +91 98987654445
+              </a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-midnight-navy flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel block font-bold">Customer Concierge Email</span>
+<a class="font-body-md text-body-md text-midnight-navy hover:text-crimson-accent underline transition-colors" href="mailto:welkarstore@gmail.com">
+                welkarstore@gmail.com
+              </a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-midnight-navy flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel block font-bold">Operational Atelier Hours</span>
+<p class="font-body-sm text-body-sm text-midnight-navy">
+                Available on Weekdays: 9:00 AM – 6:00 PM IST
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-6 lg:p-8 space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold">Send a Direct Concierge Message</h3>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been dispatched to Welkar Concierge at BKC Mumbai.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mb-1">Your Full Name</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-card rounded-lg font-body-sm text-body-sm text-midnight-navy focus:outline-none focus:ring-1 focus:ring-midnight-navy" placeholder="e.g. Vikram Singhania" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mb-1">Phone Number (For WhatsApp / COD Support)</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-card rounded-lg font-body-sm text-body-sm text-midnight-navy focus:outline-none focus:ring-1 focus:ring-midnight-navy" placeholder="+91 98000 00000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mb-1">Email Address</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-card rounded-lg font-body-sm text-body-sm text-midnight-navy focus:outline-none focus:ring-1 focus:ring-midnight-navy" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mb-1">Select Inquiry Type</label>
+<select class="w-full px-3.5 py-2.5 bg-surface-card rounded-lg font-body-sm text-body-sm text-midnight-navy focus:outline-none focus:ring-1 focus:ring-midnight-navy">
+<option>Order Tracking &amp; COD Inquiries</option>
+<option>7-Day Return / Exchange Initiation</option>
+<option>Timepiece Technical Specifications</option>
+<option>Bulk / Corporate Gifting Inquiries</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mb-1">Message</label>
+<textarea class="w-full px-3.5 py-2.5 bg-surface-card rounded-lg font-body-sm text-body-sm text-midnight-navy focus:outline-none focus:ring-1 focus:ring-midnight-navy" placeholder="How may our timepiece atelier assist you today?" rows="3"></textarea>
+</div>
+<button class="w-full py-3 bg-crimson-accent hover:bg-crimson-hover text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold rounded-lg shadow-md transition-all flex items-center justify-center gap-2" type="submit">
+<span>Send Concierge Request</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Interactive Modal 1: Back Plate Inspection (Silver Quartz) -->
+<div class="fixed inset-0 z-50 bg-midnight-navy/70 backdrop-blur-sm hidden items-center justify-center p-4" id="backplate-modal">
+<div class="bg-surface-card max-w-lg w-full rounded-2xl p-6 shadow-2xl relative space-y-4">
+<div class="flex items-center justify-between pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-crimson-accent font-bold">Engineering Detail</span>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold">Stainless Steel Case Back View</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-midnight-navy" onclick="closeBackplateModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="aspect-square w-full rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-4">
+<img alt="Welkar stainless steel case back plate detail" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VHMSkS9TWzciiNrzlU4j6UTe032NQnVmvZ1PHDpej1A7egvcuXj2DjcPQ8sXJBs68G_wYQU16T1Lt0K7zCxofEQ00W6ELpcyvimzlF9HawKzA2WWciKjGl__cFBO2Ghy8Qt2i_Y95PBEOkCdvk-2kbEd-t6Mj0ipRew-MgBABepfiDCY40-LpVJBSu9p5tja5juKLXUbOWlQ6okY5ZK6g2Hp351YqDm2dAdUfwm5dE19TDan9EU6WlXcu7"/>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl space-y-1">
+<div class="font-title-md text-title-md text-midnight-navy font-semibold">Engraved Specifications</div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+          30M Hydrostatic Water Resistant • Solid Stainless Steel Back • Welkar Registered Precision Movement • Japan Mechanism Calibration.
+        </p>
+</div>
+<button class="w-full py-3 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg transition-all flex items-center justify-center gap-2" onclick="handleAddToCart('Welkar Men\'s Silver Quartz Watch', '799.00'); closeBackplateModal();" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Add to Cart (Rs. 799.00)</span>
+</button>
+</div>
+</div>
+<!-- Interactive Modal 2: 3-Piece Organizer Dimensions -->
+<div class="fixed inset-0 z-50 bg-midnight-navy/70 backdrop-blur-sm hidden items-center justify-center p-4" id="organizer-modal">
+<div class="bg-surface-card max-w-lg w-full rounded-2xl p-6 shadow-2xl relative space-y-4">
+<div class="flex items-center justify-between pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-crimson-accent font-bold">Dimension Guide</span>
+<h3 class="font-headline-sm text-headline-sm text-midnight-navy font-semibold">Welkar 3-Piece Travel Washbag Set</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-midnight-navy" onclick="closeOrganizerModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="aspect-square w-full rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-2">
+<img alt="Welkar 3-piece washbag size diagram and dimensions" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VcBT_6YsGL6dtFwfsedBCCWhiIpc71zmYV_YcHIr2CMj7ymp2MbsS2o8SUTJ9T6ZgwK41VpCoX_q5FqEIzyV4Bc8mwV2c5m5hh5Sfz_fcyTn0Y5Mn-6PbeiYh6RIciXfBis5IcUcB9gHzAOqsWuQpA5n9MRvPUSTT5rUSC3KrtIn8TJc30MCHOaoDSPV9I--_OEg2sVjX_3TuFTQtyI0LvpSqgZiQKHOqEWu9Jt8oChJYXTHW_JW_t4mmV"/>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-slate-steel font-bold uppercase">Large</div>
+<div class="font-body-sm text-body-sm text-midnight-navy font-bold">30 × 21 × 10 cm</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-slate-steel font-bold uppercase">Medium</div>
+<div class="font-body-sm text-body-sm text-midnight-navy font-bold">26 × 16 × 7 cm</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-slate-steel font-bold uppercase">Small</div>
+<div class="font-body-sm text-body-sm text-midnight-navy font-bold">21 × 12 × 7 cm</div>
+</div>
+</div>
+<button class="w-full py-3 bg-midnight-navy hover:bg-slate-steel text-on-primary font-label-md text-label-md font-semibold rounded-lg transition-all flex items-center justify-center gap-2" onclick="handleAddToCart('Welkar 3-Piece Travel Washbag (Light Blue)', '699.00'); closeOrganizerModal();" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Add 3-Piece Set (Rs. 699.00)</span>
+</button>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 bg-midnight-navy text-on-primary px-5 py-4 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<div class="w-8 h-8 rounded-full bg-crimson-accent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold" id="toast-title">Item Added to Cart</div>
+<div class="font-body-sm text-body-sm text-dial-silver" id="toast-subtitle">Ready for express COD checkout</div>
+</div>
+</div>
+<!-- Micro-Interactions Script -->
+<script>
+    function handleAddToCart(itemName, price) {
+      const toast = document.getElementById('cart-toast');
+      const title = document.getElementById('toast-title');
+      const subtitle = document.getElementById('toast-subtitle');
+      
+      title.innerText = itemName;
+      subtitle.innerText = 'Rs. ' + price + ' • Free Express Shipping Included';
+      
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    function showBackplateModal() {
+      const modal = document.getElementById('backplate-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeBackplateModal() {
+      const modal = document.getElementById('backplate-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showOrganizerModal() {
+      const modal = document.getElementById('organizer-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeOrganizerModal() {
+      const modal = document.getElementById('organizer-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+</div></main><footer class="w-full bg-midnight-navy text-on-primary pt-space-xl pb-space-lg"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-3"><img alt="Welkar" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1XU_AQxB16S_IvE5aiRUEhvHO6_JkAQM_RP7SIrXD4BJRB36ey59vOhCXkjBQXA1qGoklaFdAW4yffNgABRz7wtRnFXXAjpJ-BrovKf83n0ggfQKjGooUOsor0IvqLzoZ81iBUHJWdLYN7ErRb_blF2sEJlDPNRkgqVP6ZUgVGrPmxqOXUSHLRT0Rk-JbtXb_S_kOAQjNKlUV94hC1UxgjNLLhlVD9CEiBQJ0NB7IZ8L3wBQxHPxmRrP-E"/><span class="font-headline-md text-headline-md text-on-primary font-semibold tracking-tight">WELKAR</span></div><p class="font-body-md text-body-md text-dial-silver max-w-sm">Handcrafted precision, premium stainless steel cases, and enduring design engineered for connoisseurs of authentic horological craftsmanship.</p><div class="space-y-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-dial-silver">Atelier Flagship Store</div><p class="font-body-sm text-body-sm text-dial-silver flex items-start gap-1.5"><span class="material-symbols-outlined text-crimson-accent text-[18px] shrink-0">location_on</span><span>Unit G-14, The Capital, G Block, Bandra Kurla Complex (BKC), Bandra East, Mumbai, Maharashtra 400051</span></p></div><div class="flex items-center gap-space-sm pt-2"><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">public</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">mail</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">call</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">share</span></a></div></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">Collections</div><ul class="space-y-2 font-body-sm text-body-sm text-dial-silver"><li><a class="hover:text-on-primary transition-colors" data-path="mens-watches" href="#">Men's Chronographs</a></li><li><a class="hover:text-on-primary transition-colors" data-path="womens-watches" href="#">Women's Heritage</a></li><li><a class="hover:text-on-primary transition-colors" data-path="kids-and-youth" href="#">Kids &amp; Youth Active</a></li><li><a class="hover:text-on-primary transition-colors" data-path="unisex-and-minimalist" href="#">Minimalist Unisex</a></li><li><a class="hover:text-on-primary transition-colors" data-path="new-arrivals" href="#">Automatic Editions</a></li><li><a class="hover:text-on-primary transition-colors" data-path="offers" href="#">Collector Specials</a></li></ul></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">Client Care &amp; Services</div><ul class="space-y-2 font-body-sm text-body-sm text-dial-silver"><li><a class="hover:text-on-primary transition-colors" data-path="order-tracking" href="#">Track Your Order</a></li><li><a class="hover:text-on-primary transition-colors" data-path="warranty-registration" href="#">2-Year Warranty Portal</a></li><li><a class="hover:text-on-primary transition-colors" data-path="returns-and-exchanges" href="#">7-Day Easy Returns</a></li><li><a class="hover:text-on-primary transition-colors" data-path="service-centers" href="#">Authorized Service Centers</a></li><li><a class="hover:text-on-primary transition-colors" data-path="authenticity-check" href="#">Serial Number Authentication</a></li><li><a class="hover:text-on-primary transition-colors" data-path="contact-us" href="#">Support Concierge</a></li></ul></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">The Atelier Dispatch</div><p class="font-body-sm text-body-sm text-dial-silver">Receive private invitations to limited batch drops and horological insights.</p><div class="space-y-2"><input class="w-full px-3 py-2 bg-primary-container text-on-primary rounded-lg font-body-sm text-body-sm placeholder:text-slate-steel focus:outline-none focus:ring-1 focus:ring-crimson-accent" placeholder="Enter your email address" type="email"/><button class="w-full py-2 bg-crimson-accent hover:bg-crimson-hover text-on-primary rounded-lg font-label-md text-label-md tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2" type="button">Subscribe to Gazette <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></div><div class="pt-2"><span class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider block mb-2">Secure Transactions</span><div class="flex items-center gap-2 text-dial-silver"><span class="p-1.5 bg-primary-container rounded flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-crimson-accent">lock</span> 256-bit SSL</span><span class="p-1.5 bg-primary-container rounded flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-dial-silver">credit_card</span> UPI &amp; Cards</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-slate-steel"><p>© 2025 Welkar Watches Atelier LLP. All Rights Reserved. Crafted for precision and timeless elegance.</p><div class="flex items-center gap-6 font-label-sm text-label-sm"><a class="hover:text-dial-silver transition-colors" href="#">Privacy Policy</a><a class="hover:text-dial-silver transition-colors" href="#">Terms of Service</a><a class="hover:text-dial-silver transition-colors" href="#">Shipping &amp; COD Terms</a></div></div></div></footer></body></html>

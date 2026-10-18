@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://www.welkar.in/</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/catalog</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/catalog" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/catalog?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/catalog" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brands</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brands" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brands?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brands" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/mens-watches</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/mens-watches" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/mens-watches?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/mens-watches" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/womens-watches</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/womens-watches" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/womens-watches?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/womens-watches" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/unisex-minimalist</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/unisex-minimalist" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/unisex-minimalist?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/unisex-minimalist" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/luxury-watches</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/luxury-watches" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/luxury-watches?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/luxury-watches" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/sports-watches</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/sports-watches" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/sports-watches?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/sports-watches" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/kids-youth-watches</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/kids-youth-watches" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/kids-youth-watches?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/kids-youth-watches" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/new-arrivals</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/new-arrivals" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/new-arrivals?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/new-arrivals" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/collections/offers</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/collections/offers" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/collections/offers?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/collections/offers" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brand/welkar</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brand/welkar" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brand/welkar?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brand/welkar" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brand/titan</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brand/titan" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brand/titan?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brand/titan" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brand/casio</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brand/casio" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brand/casio?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brand/casio" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brand/fossil</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brand/fossil" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brand/fossil?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brand/fossil" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/brand/timex</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/brand/timex" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/brand/timex?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/brand/timex" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-royale-classic-roman-gold</loc>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-royale-classic-roman-gold" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-royale-classic-roman-gold?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-royale-classic-roman-gold" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/titan-neo-splash-sport-chrono</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/titan-neo-splash-sport-chrono" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/titan-neo-splash-sport-chrono?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/titan-neo-splash-sport-chrono" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/fossil-townsman-automatic-skeleton</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/fossil-townsman-automatic-skeleton" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/fossil-townsman-automatic-skeleton?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/fossil-townsman-automatic-skeleton" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-silver-quartz-analog-day-date</loc>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-silver-quartz-analog-day-date" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-silver-quartz-analog-day-date?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-silver-quartz-analog-day-date" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-hydro-lab-submersion-master</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-hydro-lab-submersion-master" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-hydro-lab-submersion-master?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-hydro-lab-submersion-master" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-sunray-teal-dial-silver-metal-strap</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-sunray-teal-dial-silver-metal-strap" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-sunray-teal-dial-silver-metal-strap?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-sunray-teal-dial-silver-metal-strap" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-executive-steel-chrono-dial</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-executive-steel-chrono-dial" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-executive-steel-chrono-dial?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-executive-steel-chrono-dial" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-black-out-sport-racer</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-black-out-sport-racer" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-black-out-sport-racer?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-black-out-sport-racer" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-youth-dual-display-chrono-sport-arctic-blue</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-youth-dual-display-chrono-sport-arctic-blue" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-youth-dual-display-chrono-sport-arctic-blue?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-youth-dual-display-chrono-sport-arctic-blue" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/product/welkar-junior-shock-guard-digital-led-blaze-orange</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/product/welkar-junior-shock-guard-digital-led-blaze-orange" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/product/welkar-junior-shock-guard-digital-led-blaze-orange?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/product/welkar-junior-shock-guard-digital-led-blaze-orange" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/about</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/about" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/about?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/about" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/track-order</loc>
+        <lastmod>2026-10-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/track-order" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/track-order?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/track-order" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/shipping-policy</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/shipping-policy" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/shipping-policy?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/shipping-policy" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/returns-exchanges</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/returns-exchanges" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/returns-exchanges?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/returns-exchanges" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/warranty</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/warranty" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/warranty?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/warranty" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/privacy-policy</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/privacy-policy" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/privacy-policy?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/privacy-policy" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/terms-conditions</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/terms-conditions" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/terms-conditions?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/terms-conditions" />
+    </url>
+    <url>
+        <loc>https://www.welkar.in/page/faqs</loc>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.welkar.in/page/faqs" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://www.welkar.in/page/faqs?lang=hi" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.welkar.in/page/faqs" />
+    </url>
+</urlset>

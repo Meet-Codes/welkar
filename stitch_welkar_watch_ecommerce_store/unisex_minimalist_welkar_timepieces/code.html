@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Noto+Serif:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-high": "#e2e7ff",
+          "tertiary-fixed": "#ffdad8",
+          "on-primary": "#ffffff",
+          "crimson-hover": "#C92A37",
+          "outline-variant": "#c6c6ce",
+          "inverse-surface": "#283044",
+          "surface-container-low": "#f2f3ff",
+          "primary": "#000000",
+          "dial-silver": "#E2E8F0",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed": "#131a33",
+          "surface-canvas": "#F8FAFC",
+          "surface-container-highest": "#dae2fd",
+          "surface-variant": "#dae2fd",
+          "outline": "#76767e",
+          "surface-dim": "#d2d9f4",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#dbe1ff",
+          "on-secondary-fixed": "#111a36",
+          "on-tertiary-container": "#f1414d",
+          "surface-tint": "#565d79",
+          "on-secondary-fixed-variant": "#3d4664",
+          "on-primary-fixed-variant": "#3e4660",
+          "inverse-on-surface": "#eef0ff",
+          "on-tertiary-fixed": "#410007",
+          "surface-container-lowest": "#ffffff",
+          "crimson-accent": "#E63946",
+          "background": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "on-background": "#131b2e",
+          "surface-card": "#FFFFFF",
+          "tertiary": "#000000",
+          "midnight-navy": "#0B132B",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "slate-steel": "#475569",
+          "primary-container": "#131a33",
+          "secondary-container": "#d0d9fd",
+          "tertiary-fixed-dim": "#ffb3b1",
+          "on-secondary-container": "#555e7d",
+          "inverse-primary": "#bec5e5",
+          "error": "#ba1a1a",
+          "primary-fixed-dim": "#bec5e5",
+          "on-surface": "#131b2e",
+          "surface-container": "#eaedff",
+          "primary-fixed": "#dbe1ff",
+          "on-surface-variant": "#45464d",
+          "surface": "#faf8ff",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#92001c",
+          "border-subtle": "#E2E8F0",
+          "secondary-fixed-dim": "#bdc5e9",
+          "secondary": "#545d7c",
+          "on-primary-container": "#7b83a0",
+          "tertiary-container": "#410007"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "3rem",
+          "space-md": "1rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Noto Serif"
+          ],
+          "label-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg": [
+            "Noto Serif"
+          ],
+          "display-lg-mobile": [
+            "Noto Serif"
+          ],
+          "label-lg": [
+            "Hanken Grotesk"
+          ],
+          "label-md": [
+            "Hanken Grotesk"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "display-lg": [
+            "Noto Serif"
+          ],
+          "headline-lg-mobile": [
+            "Noto Serif"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "title-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Noto Serif"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-midnight-navy text-on-primary py-1.5 px-4 overflow-hidden"><div class="w-full flex items-center justify-between text-center font-label-sm text-label-sm tracking-widest uppercase"><div class="hidden md:flex items-center gap-2"><span class="material-symbols-outlined text-crimson-accent text-[14px]">local_shipping</span><span>Complimentary Insured Shipping Across India</span></div><div class="flex items-center justify-center gap-6 mx-auto"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-crimson-accent text-[14px]">payments</span> Cash On Delivery (COD) Available</span><span class="hidden sm:inline text-slate-steel">•</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-crimson-accent text-[14px]">verified</span> 7-Day Hassle-Free Returns</span></div><div class="hidden md:flex items-center gap-2"><span class="material-symbols-outlined text-crimson-accent text-[14px]">shield</span><span>2-Year Movement Warranty</span></div></div></div><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-3" data-path="welkar-timepieces-official-e-commerce-storefront" href="#"><img alt="Welkar" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XU_AQxB16S_IvE5aiRUEhvHO6_JkAQM_RP7SIrXD4BJRB36ey59vOhCXkjBQXA1qGoklaFdAW4yffNgABRz7wtRnFXXAjpJ-BrovKf83n0ggfQKjGooUOsor0IvqLzoZ81iBUHJWdLYN7ErRb_blF2sEJlDPNRkgqVP6ZUgVGrPmxqOXUSHLRT0Rk-JbtXb_S_kOAQjNKlUV94hC1UxgjNLLhlVD9CEiBQJ0NB7IZ8L3wBQxHPxmRrP-E"/><span class="font-headline-sm text-headline-sm tracking-tight text-midnight-navy hidden lg:inline-block font-semibold">WELKAR</span></a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-midnight-navy text-on-primary font-label-md"><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="mens-watches" href="#">Men's Watches</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="womens-watches" href="#">Women's Watches</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids-and-youth" href="#">Kids &amp; Youth</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="unisex-and-minimalist" href="#">Unisex &amp; Minimalist</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><a class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="special-offers" href="#">Special Offers</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden sm:block w-48 md:w-64"><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface" placeholder="Search precision timepieces..." type="text"/><span class="material-symbols-outlined absolute left-2.5 top-2 text-slate-steel text-[18px]">search</span></div><a class="relative p-2 rounded-lg text-slate-steel hover:text-midnight-navy hover:bg-surface-container-low transition-colors" data-path="wishlist" href="#" title="Wishlist"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-crimson-accent text-on-tertiary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><a class="relative p-2 rounded-lg text-slate-steel hover:text-midnight-navy hover:bg-surface-container-low transition-colors" data-path="cart" href="#" title="Shopping Cart"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-midnight-navy text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><a class="p-1 rounded-lg hover:bg-surface-container-low transition-colors" data-path="account" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="w-full pt-20 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Minimalist Editorial Collection Header -->
+<section class="relative bg-surface-container-low text-on-surface py-space-xl overflow-hidden">
+<div class="w-full px-margin">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-gutter">
+<div class="max-w-3xl space-y-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm tracking-widest uppercase text-crimson-accent">
+<span class="inline-block w-2 h-2 rounded-full bg-crimson-accent"></span>
+<span>Atelier Core Collection • 2025 Edition</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display-lg text-midnight-navy font-semibold tracking-tight">
+            Unisex &amp; Minimalist: <span class="italic font-normal">Pure Form. Essential Function.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-slate-steel max-w-2xl">
+            Gender-neutral 38mm–40mm architectural proportions, monochromatic palettes, Bauhaus clean dials, and enduring geometric poise engineered for universal wear.
+          </p>
+</div>
+<!-- Spec Highlights Indicator Card -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm max-w-md shrink-0">
+<div class="grid grid-cols-3 gap-space-md text-center">
+<div>
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">7.2mm</div>
+<div class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mt-0.5">Ultra-Slim Case</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">38-40</div>
+<div class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mt-0.5">Neutral Gauge</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-midnight-navy font-bold">Quick-Pin</div>
+<div class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider mt-0.5">Toolless Swap</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Filter Chips Horizontal Strip -->
+<div class="flex items-center gap-2 pt-space-lg overflow-x-auto">
+<button class="px-4 py-1.5 rounded-full bg-midnight-navy text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-transform active:scale-95">
+          All Minimalist (6)
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-card text-slate-steel hover:text-midnight-navy font-label-md text-label-md shrink-0 shadow-sm transition-colors">
+          38mm Proportions
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-card text-slate-steel hover:text-midnight-navy font-label-md text-label-md shrink-0 shadow-sm transition-colors">
+          Bauhaus Line Indices
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-card text-slate-steel hover:text-midnight-navy font-label-md text-label-md shrink-0 shadow-sm transition-colors">
+          Monochrome PVD Stealth
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-card text-slate-steel hover:text-midnight-navy font-label-md text-label-md shrink-0 shadow-sm transition-colors">
+          Modular Bundles
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Catalog Section with Filter Sidebar -->
+<section class="w-full px-margin py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Filter Sidebar Column -->
+<aside class="lg:col-span-3 space-y-space-lg">
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-title-md text-title-md text-midnight-navy flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-slate-steel">tune</span>
+              Refine Gallery
+            </span>
+<button class="font-label-sm text-label-sm text-crimson-accent hover:text-crimson-hover uppercase tracking-wider">
+              Reset
+            </button>
+</div>
+<!-- Filter Group: Case Profile -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel font-bold block">Case Profile</span>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Ultra-Slim 7mm Architecture
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">4</span>
+</label>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Classic 9mm Steel Frame
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">2</span>
+</label>
+</div>
+<!-- Filter Group: Dial Aesthetic -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel font-bold block">Dial Aesthetic</span>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Bauhaus Fine Indices
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">3</span>
+</label>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Numberless Clean Dial
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">2</span>
+</label>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Monochrome Matte Finish
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">1</span>
+</label>
+</div>
+<!-- Filter Group: Strap Interchangeability -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel font-bold block">Strap System</span>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Quick-Release Mesh
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">3</span>
+</label>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Brushed Solid Steel
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">2</span>
+</label>
+<label class="flex items-center justify-between py-1 text-on-surface cursor-pointer text-body-sm font-body-sm hover:text-midnight-navy">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-midnight-navy accent-midnight-navy" type="checkbox"/>
+                Vegan Tanned Leather
+              </span>
+<span class="text-slate-steel font-label-sm text-label-sm">1</span>
+</label>
+</div>
+<!-- Filter Group: Colorway Swatches -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-steel font-bold block">Palette Spectrum</span>
+<div class="flex items-center gap-2.5 pt-1">
+<button class="w-7 h-7 rounded-full bg-midnight-navy ring-2 ring-offset-2 ring-midnight-navy transition-transform hover:scale-110" title="Monochrome Black"></button>
+<button class="w-7 h-7 rounded-full bg-dial-silver transition-transform hover:scale-110" title="Brushed Silver"></button>
+<button class="w-7 h-7 rounded-full bg-slate-steel transition-transform hover:scale-110" title="Slate Grey"></button>
+<button class="w-7 h-7 rounded-full bg-surface-container-high transition-transform hover:scale-110" title="Warm Sand"></button>
+</div>
+</div>
+<!-- Atelier Standard Callout -->
+<div class="bg-surface-container-low p-space-sm rounded-lg mt-space-md space-y-1">
+<div class="flex items-center gap-1.5 text-midnight-navy font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-crimson-accent">straighten</span>
+              Universal Sizing Guide
+            </div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+              Our 38mm–40mm unisex case geometries are calibrated to rest comfortably on wrists ranging from 5.5" to 7.8" circumference.
+            </p>
+</div>
+</div>
+</aside>
+<!-- Products Grid & Controls Column -->
+<main class="lg:col-span-9 space-y-space-md">
+<!-- Grid Header Status Bar -->
+<div class="bg-surface-card p-space-sm rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="font-body-md text-body-md text-slate-steel">
+            Displaying <span class="font-bold text-midnight-navy">6 essential pieces</span> in Unisex Horology
+          </div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="flex items-center gap-2 font-label-md text-label-md text-slate-steel">
+<span>Sort:</span>
+<select class="bg-surface-container-low px-3 py-1.5 rounded-lg text-midnight-navy font-label-md text-label-md focus:outline-none">
+<option>Featured &amp; Curated</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>New Releases First</option>
+</select>
+</div>
+</div>
+</div>
+<!-- 6 Products Curated Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Card 1: Welkar Stealth Square Monolith (Using User Uploaded Image 1) -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="object-cover w-full h-full rounded-lg transform transition-transform duration-500 group-hover:scale-105" data-alt="High precision black PVD square case minimalist watch with glossy ceramic black links and dark reflective dial shot against textured raw studio stone under mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFfo9ezS9zZ4MD2IfXZmflr3yYMYIatQfHYgFOEt8WDieDSoTjpwwpUMg8XvinfrAjDQbjho74Bbtim8pBetuyW8eo9fUCqNLJso2QXJA3YTO5EYc4kVIxejRuir4fu2g7EU4Snw6RerEMnIom5vGbKla79j7QgfNJFB842HTKbKNcxtgN9bwStkr7aoRecyyBobmwJNadzWmyzxZt0v4yvFleTt0r_5r3We9y0GAw4muzOuKjNv6SkQ"/>
+<span class="absolute top-3 left-3 bg-crimson-accent text-on-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Save 40%
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Square 39mm • PVD Onyx</span>
+<span class="text-midnight-navy font-semibold">In Stock</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Stealth Square Monolith
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  All-black dial with precision silver needle accents, flush crown, and monolithic gloss PVD link bracelet.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Bauhaus Hand</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">7.4mm Depth</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹899</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,499</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-midnight-navy hover:bg-slate-steel text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                Quick Add
+              </button>
+</div>
+</article>
+<!-- Card 2: Welkar Mono Bauhaus 38mm -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="object-cover w-full h-full rounded-lg transform transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist Bauhaus 38mm analog watch with pristine white dial slender black tick indices and ultra slim matte black Milanese mesh strap on soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5nPRJ-3kRHgWTnnfgqhDgtDIZovAyBprgeqioKR7I3PIkjYfipZCzucF8sTBhxtZSqA5zX9Tm3w164HBfeqKlN3p_r8UzBUR8rZ7-dhwufTXvj-_88fWTFgC7_jQqak2R65RC7b5ehCAqYKbfTmumD_lgIoq0DursmQrudJg3cK6VuqE_UstBlWg9spCLqGv1OALFzY0nfk6UXe0DMH9uG-XMo5iOH3UIc3s7U1pvWzadNIs9MGTg3A"/>
+<span class="absolute top-3 left-3 bg-midnight-navy text-on-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Best Seller
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Round 38mm • Bauhaus</span>
+<span class="text-crimson-accent font-semibold">Low Stock</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Mono Bauhaus 38mm
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  Matte white clean dial with surgical black hands, numberless face, and quick-release Milanese mesh.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Matte White</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Mesh Quick-Pin</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹799</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,299</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-midnight-navy hover:bg-slate-steel text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                Quick Add
+              </button>
+</div>
+</article>
+<!-- Card 3: Welkar Silver Essence Analog (Using User Uploaded Image 2) -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="object-cover w-full h-full rounded-lg transform transition-transform duration-500 group-hover:scale-105" data-alt="High precision stainless steel watch with clean silver bezel black textured dial dual calendar window and reflective polished links on clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3TDi2zwDksP-qoGQ3ZSf3G73Z4Uivs2n1UkbzBeqahK0mt69WYmmV2MLAkLqhR1LftQzEVIJIa4lghVkHDp86TdvAKTXWKeGSsvCC1C3dkn-ZpA0uQMoPN_seUZpcOkUEnFzUO6lTMCcHBvwfFlxWjVg7Q5uDSlx4tFQuWvzQ4fGYjt-UKszoblkzfbYVe99mytCShbAuMoW5U6mIqVLOLuidq4SXnVwBHu0Qf6jVmCLHEMy4AABXhg"/>
+<span class="absolute top-3 left-3 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Precision Steel
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Round 40mm • Silver Link</span>
+<span class="text-midnight-navy font-semibold">Atelier Classic</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Silver Essence Analog
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  Brushed and mirror-polished stainless links with subtle day-date calendar aperture and luminous markers.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">316L Stainless</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Water Shield</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹799</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,199</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-midnight-navy hover:bg-slate-steel text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                Quick Add
+              </button>
+</div>
+</article>
+<!-- Card 4: Welkar Horizon Slate Dial -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="object-cover w-full h-full rounded-lg transform transition-transform duration-500 group-hover:scale-105" data-alt="Refined contemporary minimalist wristwatch with deep charcoal slate sunburst dial brushed surgical stainless steel bezel and charcoal strap under directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsfXOJCTEagHDs7bXnRyuJ8RsjfFgHC02GIOQpGikK5N2wbq_iRG7Px_NvYQvlUo_WpEPcTkV2LQHEOzzeqtD9gXMmXGJfqhiZAHM-0W4TnLdIQdvtj53gynV8THimsfKp__u2ye2LT1qX3vgBrvaaYK3NJtOQ_e1cmYKZQu0xfI2uInDEUwOWr50_QeNrHgrH8mM3F_DdbFSXx1c5BXHnZ6CmImi4rOlQLbXBgqppNchmc8ASNxmt7g"/>
+<span class="absolute top-3 left-3 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Sunray Brush
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Round 39mm • Slate Dial</span>
+<span class="text-midnight-navy font-semibold">New Edition</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Horizon Slate Dial
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  Brushed circular stainless bezel housing a deep charcoal face with micro-chamfered baton hands.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Charcoal Sunray</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Mineral Crystal</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹899</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,399</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-midnight-navy hover:bg-slate-steel text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                Quick Add
+              </button>
+</div>
+</article>
+<!-- Card 5: Welkar Dual-Zone Minimalist Traveler -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="object-cover w-full h-full rounded-lg transform transition-transform duration-500 group-hover:scale-105" data-alt="Monochrome traveler wristwatch with dual concentric subdial minimalist markings in obsidian navy and steel on fine textured paper backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxEvIorvdjaHdScxRsF5pcca4GIfvuBSFxV9wZNeRpnTcbvLlhP_0-J7tV9bG6Nt1LYO1HNS-mZkuvvnHPaagAGBNvphBwq-pm-1mLBR_-zc1oazm98V_B4bU5Jk6KOWWnR9pbP3dq6WHrWkJaik-60btaeemwvMrZfnS41f9oVKlZYclzQbZrVBMN8cXf7sOrtmQ1jOZPodoD4QROnfmun3BUPbiS1jdZcyWNBIzs3x4B6eXG-_qYxw"/>
+<span class="absolute top-3 left-3 bg-midnight-navy text-on-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Dual Movement
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Round 40mm • Traveler Subdial</span>
+<span class="text-midnight-navy font-semibold">Travel Essential</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Dual-Zone Minimalist Traveler
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  Discrete dual-timezone secondary register integrated directly into a calm, distraction-free aesthetic.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Dual Quartz</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Italian Strap</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹949</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,599</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-midnight-navy hover:bg-slate-steel text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                Quick Add
+              </button>
+</div>
+</article>
+<!-- Card 6: Welkar Minimalist Timepiece + Modular Travel Pouch Bundle (Using DATA:IMAGE:IMAGE_7) -->
+<article class="group bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+<div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img alt="Welkar Minimalist Timepiece and Modular Travel Pouch Bundle" class="object-contain w-full h-full transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1ViD5ExsjsgAiP77jA0vtifR9cnB-enZfl56MFdw-sHkciEz-JzK_CSp3pz3bQz7g20fRU8-MrWtOCawmfEWpkZnwIuy-PNihy8baKmQyQQgYxGWW47RAjxBjELNDNy69URfBKt5PiFJAuQMgNwR-1ybGRSRidIDfEvkeH2PT1X_M3-LLPpEJBxaEzabfPwTC1jcdM1jDvUSxzd7gdal7c6-9AA2C_vN9c5RHfHNxMGElfKPHx48f-Hm_pj"/>
+<span class="absolute top-3 left-3 bg-crimson-accent text-on-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded shadow-sm">
+                  Limited Bundle
+                </span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-card/90 backdrop-blur-md flex items-center justify-center text-slate-steel hover:text-crimson-accent shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-slate-steel font-label-sm text-label-sm tracking-widest uppercase">
+<span>Gift Set • Watch + Case</span>
+<span class="text-crimson-accent font-semibold">Exclusive</span>
+</div>
+<h3 class="font-title-md text-title-md text-midnight-navy font-semibold group-hover:text-crimson-accent transition-colors">
+                  Welkar Minimalist Timepiece + Modular Travel Pouch
+                </h3>
+<p class="font-body-sm text-body-sm text-slate-steel line-clamp-2">
+                  Complete gift capsule including the signature minimalist watch paired with our padded felt-lined travel protector.
+                </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Bundle Box</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-slate-steel">Extra Pin Strap</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between gap-space-sm mt-space-xs">
+<div>
+<div class="font-title-md text-title-md text-midnight-navy font-bold">₹999</div>
+<div class="font-label-sm text-label-sm text-slate-steel line-through">₹1,799</div>
+</div>
+<button class="flex-1 py-2 px-3 bg-crimson-accent hover:bg-crimson-hover text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">redeem</span>
+                Claim Bundle
+              </button>
+</div>
+</article>
+</div>
+<!-- Pagination & Trust Banner -->
+<div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider">
+            Showing all 6 curated minimalist models • Hand-tested in India
+          </div>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-surface-card shadow-sm flex items-center justify-center text-midnight-navy font-label-md text-label-md font-bold">
+              1
+            </button>
+<span class="text-slate-steel font-label-sm text-label-sm">Page 1 of 1</span>
+</div>
+</div>
+</main>
+</div>
+</section>
+<!-- Editorial Section: 'The Philosophy of Less' -->
+<section class="w-full bg-surface-container-high/40 py-space-xl my-space-md overflow-hidden">
+<div class="w-full px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Pillar -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-crimson-accent uppercase tracking-widest font-bold">
+              Design Thesis • Proportion Study
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy font-semibold tracking-tight">
+              The Philosophy of Less: Proportions Without Boundary
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-slate-steel leading-relaxed">
+            In classic horology, timepieces are often artificially segregated into exaggerated masculine bulk or dainty miniature sizes. Welkar's Unisex &amp; Minimalist line rejects this convention in favor of pure Bauhaus balance: clean 38mm to 40mm diameters calibrated to drape naturally against any wrist profile.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-card p-space-sm rounded-lg shadow-sm space-y-1">
+<div class="flex items-center gap-2 text-midnight-navy font-title-md text-title-md">
+<span class="material-symbols-outlined text-crimson-accent text-[20px]">sync_alt</span>
+                Toolless Quick-Release
+              </div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+                Swap from Milanese steel mesh to supple vegan leather in 10 seconds without specialty watchmaker tools.
+              </p>
+</div>
+<div class="bg-surface-card p-space-sm rounded-lg shadow-sm space-y-1">
+<div class="flex items-center gap-2 text-midnight-navy font-title-md text-title-md">
+<span class="material-symbols-outlined text-crimson-accent text-[20px]">layers</span>
+                Slim 7.2mm Ergonomics
+              </div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+                Slides smoothly beneath crisp French cuffs or casual weekend knitwear without catching or protruding.
+              </p>
+</div>
+</div>
+<div class="pt-space-xs flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-midnight-navy text-[20px]">verified</span>
+<span class="font-label-md text-label-md text-midnight-navy">Japanese Quartz Caliber</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-midnight-navy text-[20px]">water_drop</span>
+<span class="font-label-md text-label-md text-midnight-navy">3 ATM Water Tested</span>
+</div>
+</div>
+</div>
+<!-- Visual Pillar: Technical Breakdown Graphic -->
+<div class="lg:col-span-6">
+<div class="relative bg-surface-card p-space-lg rounded-xl shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="font-title-md text-title-md text-midnight-navy font-bold">
+                Anatomy of Welkar Unisex Casing
+              </div>
+<span class="font-label-sm text-label-sm bg-surface-container-low px-2 py-1 rounded text-slate-steel uppercase">
+                Technical Diagram
+              </span>
+</div>
+<!-- Inline Horological SVG Visualization -->
+<div class="flex items-center justify-center py-2">
+<svg class="w-full max-w-md h-auto" viewbox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+<!-- Watch Outer Circle -->
+<circle cx="200" cy="120" fill="none" r="80" stroke="#0B132B" stroke-width="2"></circle>
+<!-- Bezel Inset -->
+<circle cx="200" cy="120" fill="#F8FAFC" r="74" stroke="#E2E8F0" stroke-width="1.5"></circle>
+<!-- Bauhaus 12, 3, 6, 9 markers -->
+<line stroke="#0B132B" stroke-width="2" x1="200" x2="200" y1="52" y2="60"></line>
+<line stroke="#0B132B" stroke-width="2" x1="268" x2="260" y1="120" y2="120"></line>
+<line stroke="#0B132B" stroke-width="2" x1="200" x2="200" y1="188" y2="180"></line>
+<line stroke="#0B132B" stroke-width="2" x1="132" x2="140" y1="120" y2="120"></line>
+<!-- Subtle intermediate pips -->
+<circle cx="240" cy="74" fill="#475569" r="1.5"></circle>
+<circle cx="258" cy="154" fill="#475569" r="1.5"></circle>
+<circle cx="160" cy="166" fill="#475569" r="1.5"></circle>
+<circle cx="142" cy="86" fill="#475569" r="1.5"></circle>
+<!-- Center Pivot -->
+<circle cx="200" cy="120" fill="#0B132B" r="3.5"></circle>
+<!-- Hour & Minute hands -->
+<line stroke="#0B132B" stroke-linecap="round" stroke-width="2.5" x1="200" x2="200" y1="120" y2="76"></line>
+<line stroke="#0B132B" stroke-linecap="round" stroke-width="2" x1="200" x2="242" y1="120" y2="132"></line>
+<!-- Crimson Accent Second Needle -->
+<line stroke="#E63946" stroke-linecap="round" stroke-width="1.2" x1="200" x2="200" y1="128" y2="64"></line>
+<!-- Crown -->
+<rect fill="#0B132B" height="12" rx="1.5" width="6" x="280" y="114"></rect>
+<!-- Strap Bars -->
+<path d="M 160 40 L 240 40 L 235 50 L 165 50 Z" fill="#E2E8F0"></path>
+<path d="M 160 200 L 240 200 L 235 190 L 165 190 Z" fill="#E2E8F0"></path>
+<!-- Callout Labels -->
+<text fill="#475569" font-family="Hanken Grotesk" font-size="11" x="30" y="70">38mm True Case</text>
+<path d="M 115 68 L 140 78" stroke="#E63946" stroke-dasharray="2,2" stroke-width="1"></path>
+<text fill="#475569" font-family="Hanken Grotesk" font-size="11" x="305" y="80">Flush Recessed Crown</text>
+<path d="M 300 85 L 285 110" stroke="#E63946" stroke-dasharray="2,2" stroke-width="1"></path>
+<text fill="#475569" font-family="Hanken Grotesk" font-size="11" x="50" y="195">Quick-Release Pin</text>
+<path d="M 140 190 L 165 195" stroke="#E63946" stroke-dasharray="2,2" stroke-width="1"></path>
+</svg>
+</div>
+<!-- Spec Grid Checklist -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-body-sm text-body-sm text-slate-steel">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-crimson-accent"></span>
+<span>Calibrated 38–40mm Ratio</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-crimson-accent"></span>
+<span>Anti-Reflective Mineral Face</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-crimson-accent"></span>
+<span>Hypoallergenic 316L Backplate</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-crimson-accent"></span>
+<span>High-Torque Quartz Engine</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Horological FAQ / Atelier Guarantee Accordion -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-4xl mx-auto space-y-space-lg">
+<div class="text-center space-y-space-xs">
+<span class="font-label-sm text-label-sm text-crimson-accent uppercase tracking-widest font-bold">
+          Client Inquiries
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-midnight-navy font-semibold">
+          Universal Minimalist Standards
+        </h2>
+<p class="font-body-md text-body-md text-slate-steel">
+          Everything you need to know about fit, strap adjustments, and our Indian atelier warranty.
+        </p>
+</div>
+<div class="space-y-space-sm">
+<!-- Question 1 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-midnight-navy font-title-md text-title-md font-semibold cursor-pointer">
+<span>How does a 38mm-40mm case wear across different wrist sizes?</span>
+<span class="material-symbols-outlined text-[20px] text-slate-steel">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+            Case diameters between 38mm and 40mm are universally recognized as the optimal horological sweet spot. Paired with our curved lug terminals and ultra-thin 7mm profile, the watch case sits flat without lug-overhang on smaller wrists, while retaining crisp presence on broader wrists.
+          </p>
+</div>
+<!-- Question 2 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-midnight-navy font-title-md text-title-md font-semibold cursor-pointer">
+<span>Are extra tools required to swap the quick-release bands?</span>
+<span class="material-symbols-outlined text-[20px] text-slate-steel">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+            Zero tools are required. Every Welkar Unisex band is fitted with an integrated spring-loaded slide lever on the underside. Simply push the lever inward with your fingernail to detach or attach in under 10 seconds.
+          </p>
+</div>
+<!-- Question 3 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-midnight-navy font-title-md text-title-md font-semibold cursor-pointer">
+<span>What does the 2-Year Welkar Atelier Warranty cover?</span>
+<span class="material-symbols-outlined text-[20px] text-slate-steel">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-steel">
+            Our comprehensive 2-Year Movement Guarantee covers internal quartz caliber precision, hand alignment, and manufacturer defects. Each timepiece arrives with an authenticated serial card registered upon delivery.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Quick Cart Toast Bar (Micro-Interaction) -->
+<aside class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-8 sm:w-96 bg-midnight-navy text-on-primary p-space-md rounded-xl shadow-2xl z-40 transform translate-y-28 transition-transform duration-300 flex items-center justify-between gap-space-sm" id="quick-cart-bar">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-crimson-accent text-[22px]">done</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold">Added to Atelier Cart</div>
+<div class="font-body-sm text-body-sm text-dial-silver" id="toast-title">Welkar Stealth Square Monolith</div>
+</div>
+</div>
+<button class="p-1 text-dial-silver hover:text-on-primary" onclick="document.getElementById('quick-cart-bar').classList.add('translate-y-28')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</aside>
+<!-- Micro-interaction JS Script -->
+<script>
+    document.querySelectorAll('button').forEach(btn => {
+      if (btn.innerText.includes('Quick Add') || btn.innerText.includes('Claim Bundle')) {
+        btn.addEventListener('click', (e) => {
+          const card = e.currentTarget.closest('article');
+          const title = card ? card.querySelector('h3').innerText : 'Welkar Minimalist Timepiece';
+          const toast = document.getElementById('quick-cart-bar');
+          const toastTitle = document.getElementById('toast-title');
+          if (toast && toastTitle) {
+            toastTitle.innerText = title;
+            toast.classList.remove('translate-y-28');
+            setTimeout(() => {
+              toast.classList.add('translate-y-28');
+            }, 3500);
+          }
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-midnight-navy text-on-primary pt-space-xl pb-space-lg"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-3"><img alt="Welkar" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1XU_AQxB16S_IvE5aiRUEhvHO6_JkAQM_RP7SIrXD4BJRB36ey59vOhCXkjBQXA1qGoklaFdAW4yffNgABRz7wtRnFXXAjpJ-BrovKf83n0ggfQKjGooUOsor0IvqLzoZ81iBUHJWdLYN7ErRb_blF2sEJlDPNRkgqVP6ZUgVGrPmxqOXUSHLRT0Rk-JbtXb_S_kOAQjNKlUV94hC1UxgjNLLhlVD9CEiBQJ0NB7IZ8L3wBQxHPxmRrP-E"/><span class="font-headline-md text-headline-md text-on-primary font-semibold tracking-tight">WELKAR</span></div><p class="font-body-md text-body-md text-dial-silver max-w-sm">Handcrafted precision, premium stainless steel cases, and enduring design engineered for connoisseurs of authentic horological craftsmanship.</p><div class="space-y-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-dial-silver">Atelier Flagship Store</div><p class="font-body-sm text-body-sm text-dial-silver flex items-start gap-1.5"><span class="material-symbols-outlined text-crimson-accent text-[18px] shrink-0">location_on</span><span>Unit G-14, The Capital, G Block, Bandra Kurla Complex (BKC), Bandra East, Mumbai, Maharashtra 400051</span></p></div><div class="flex items-center gap-space-sm pt-2"><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">public</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">mail</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">call</span></a><a class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-crimson-accent transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">share</span></a></div></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">Collections</div><ul class="space-y-2 font-body-sm text-body-sm text-dial-silver"><li><a class="hover:text-on-primary transition-colors" data-path="mens-watches" href="#">Men's Chronographs</a></li><li><a class="hover:text-on-primary transition-colors" data-path="womens-watches" href="#">Women's Heritage</a></li><li><a class="hover:text-on-primary transition-colors" data-path="kids-and-youth" href="#">Kids &amp; Youth Active</a></li><li><a class="hover:text-on-primary transition-colors" data-path="unisex-and-minimalist" href="#">Minimalist Unisex</a></li><li><a class="hover:text-on-primary transition-colors" data-path="new-arrivals" href="#">Automatic Editions</a></li><li><a class="hover:text-on-primary transition-colors" data-path="special-offers" href="#">Collector Specials</a></li></ul></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">Client Care &amp; Services</div><ul class="space-y-2 font-body-sm text-body-sm text-dial-silver"><li><a class="hover:text-on-primary transition-colors" data-path="order-tracking" href="#">Track Your Order</a></li><li><a class="hover:text-on-primary transition-colors" data-path="warranty-registration" href="#">2-Year Warranty Portal</a></li><li><a class="hover:text-on-primary transition-colors" data-path="returns-and-exchanges" href="#">7-Day Easy Returns</a></li><li><a class="hover:text-on-primary transition-colors" data-path="service-centers" href="#">Authorized Service Centers</a></li><li><a class="hover:text-on-primary transition-colors" data-path="authenticity-check" href="#">Serial Number Authentication</a></li><li><a class="hover:text-on-primary transition-colors" data-path="contact-us" href="#">Support Concierge</a></li></ul></div><div class="space-y-space-sm"><div class="font-title-md text-title-md text-on-primary">The Atelier Dispatch</div><p class="font-body-sm text-body-sm text-dial-silver">Receive private invitations to limited batch drops and horological insights.</p><div class="space-y-2"><input class="w-full px-3 py-2 bg-primary-container text-on-primary rounded-lg font-body-sm text-body-sm placeholder:text-slate-steel focus:outline-none focus:ring-1 focus:ring-crimson-accent" placeholder="Enter your email address" type="email"/><button class="w-full py-2 bg-crimson-accent hover:bg-crimson-hover text-on-primary rounded-lg font-label-md text-label-md tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2" type="button">Subscribe to Gazette <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></div><div class="pt-2"><span class="font-label-sm text-label-sm text-slate-steel uppercase tracking-wider block mb-2">Secure Transactions</span><div class="flex items-center gap-2 text-dial-silver"><span class="p-1.5 bg-primary-container rounded flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-crimson-accent">lock</span> 256-bit SSL</span><span class="p-1.5 bg-primary-container rounded flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-dial-silver">credit_card</span> UPI &amp; Cards</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-slate-steel"><p>© 2025 Welkar Watches Atelier LLP. All Rights Reserved. Crafted for precision and timeless elegance.</p><div class="flex items-center gap-6 font-label-sm text-label-sm"><a class="hover:text-dial-silver transition-colors" href="#">Privacy Policy</a><a class="hover:text-dial-silver transition-colors" href="#">Terms of Service</a><a class="hover:text-dial-silver transition-colors" href="#">Shipping &amp; COD Terms</a></div></div></div></footer></body></html>

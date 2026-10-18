@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Welkar Real-Time Watch Animation Dial Engine (Sylvi-Grade Architecture)
+   ========================================================================== */
+
+.welkar-dial-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.welkar-dial-face {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+    margin: 0 auto;
+}
+
+/* Hands Overlay */
+.welkar-dial-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.welkar-dial-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* Custom Image Hand Elements (if custom png/webp hands uploaded) */
+.welkar-img-hand {
+    position: absolute;
+    pointer-events: none;
+    will-change: transform;
+    transition: transform 0.05s linear;
+}
+
+.welkar-img-hand.hour-hand {
+    z-index: 11;
+}
+
+.welkar-img-hand.min-hand {
+    z-index: 12;
+}
+
+.welkar-img-hand.sec-hand {
+    z-index: 13;
+}
+
+/* Live Badge on Product Page and Cards */
+.badge-live-pulse {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge-live-pulse .pulse-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+    animation: livePulseAnim 1.6s infinite ease-in-out;
+}
+
+@keyframes livePulseAnim {
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 12px #22c55e;
+    }
+}
+
+/* Product Card Dial Adjustments */
+.product-card .welkar-dial-container {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card:hover .welkar-dial-container .welkar-dial-face {
+    transform: scale(1.03);
+}
+
+.product-thumb-container {
+    position: relative;
+    overflow: hidden;
+}

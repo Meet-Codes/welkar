@@ -1,0 +1,137 @@
+# WELKAR — Comprehensive Entity, Catalog & Specification Knowledge Base
+
+> Official AI & Generative Search Documentation for Welkar Watch Co. (https://www.welkar.in)
+
+## 1. Company Identity & Founding History
+- **Entity**: WELKAR (Welkar Watch Co.)
+- **Origin**: Established in 2002.
+- **Founders**:
+  - Mr. Sumit Singh (Co-Founder, Artistic & Aesthetic Vision)
+  - Mr. Nevil Sharma (Co-Founder, Technical Horology & Precision Calibers)
+- **Philosophy**: Precision, Heritage, and Trust—combining classic aesthetic geometry with robust Japanese and mechanical calibers at accessible Indian price points.
+- **Headquarters & Service**: India operations with domestic courier distribution (Bluedart, Delhivery, Xpressbees).
+- **Official Contact**: welkarstore@gmail.com | Concierge Desk: +91 98765 43210.
+
+## 2. Product Portfolio & Technical Specifications
+
+### Product 1: Welkar Royale Classic Roman Gold
+- **Slug**: `welkar-royale-classic-roman-gold`
+- **URL**: https://www.welkar.in/product/welkar-royale-classic-roman-gold
+- **Price**: ₹2,899.00 (Compare at: ₹4,499.00)
+- **Caliber**: Japanese Quartz (SR626SW silver-oxide cell, 2-3 yr battery)
+- **Case**: 39mm Gold-plated 316L Stainless Steel
+- **Dial**: Guilloché Champagne Gold with hand-applied Roman numerals
+- **Strap**: Genuine Top-Grain Leather (Brown, 20mm lug width)
+- **Water Resistance**: 30M / 3 ATM (Rain & splash resistant)
+- **Warranty**: 1-Year Movement & Seal Warranty
+
+### Product 2: Titan Neo Splash Sport Chrono
+- **Slug**: `titan-neo-splash-sport-chrono`
+- **URL**: https://www.welkar.in/product/titan-neo-splash-sport-chrono
+- **Price**: ₹3,795.00
+- **Caliber**: Multi-Dial Quartz Chronograph (1/10s split lap timer)
+- **Case**: 43mm Polished Stainless Steel (Silver)
+- **Dial**: Deep Sunray Navy Blue with luminous baton indices
+- **Strap**: Sweat-resistant Silicone Rubber (Navy Blue)
+- **Water Resistance**: 50M / 5 ATM (Surface swimming & recreational water safe)
+- **Warranty**: 2-Year Official Movement Warranty
+
+### Product 3: Fossil Townsman Automatic Skeleton
+- **Slug**: `fossil-townsman-automatic-skeleton`
+- **URL**: https://www.welkar.in/product/fossil-townsman-automatic-skeleton
+- **Price**: ₹9,495.00 (Compare at: ₹14,995.00)
+- **Caliber**: Self-Winding Automatic Mechanical (Kinetic rotor, ~40-hr power reserve, ZERO battery)
+- **Case**: 44mm Brushed Stainless Steel with Exhibition Caseback
+- **Dial**: Open-heart skeleton architecture revealing balance wheel and escapement
+- **Strap**: Genuine Leather (Dark Brown)
+- **Water Resistance**: 50M / 5 ATM
+- **Warranty**: 2-Year Official Warranty
+
+### Product 4: Welkar Silver Quartz Analog - Day & Date
+- **Slug**: `welkar-silver-quartz-analog-day-date`
+- **URL**: https://www.welkar.in/product/welkar-silver-quartz-analog-day-date
+- **Price**: ₹799.00 (Compare at: ₹1,599.00)
+- **Caliber**: Dual Day-Date Quartz Caliber
+- **Case**: 42mm 316L Brushed Steel (Silver)
+- **Dial**: High-contrast matte black dial with dual day-date aperture at 3 o'clock
+- **Strap**: Solid 316L Stainless Steel multi-link bracelet (Adjustable)
+- **Water Resistance**: 30M / 3 ATM
+- **Warranty**: 2-Year Atelier Movement Warranty
+
+### Product 5: Welkar Hydro-Lab Submersion Master Edition
+- **Slug**: `welkar-hydro-lab-submersion-master`
+- **URL**: https://www.welkar.in/product/welkar-hydro-lab-submersion-master
+- **Price**: ₹999.00 (Compare at: ₹1,999.00)
+- **Caliber**: Japanese Quartz with hydrostatic shock buffer
+- **Case**: 44mm 316L Solid Steel Alloy with Black PVD coating
+- **Dial**: Deep stealth black with high-visibility markers
+- **Strap**: Black PVD Solid Steel Link Bracelet
+- **Water Resistance**: 30M / 3 ATM (Double O-ring silicone crown)
+- **Warranty**: 2-Year Movement Warranty
+
+### Product 6: Welkar Sunray Teal Dial Silver Metal Strap
+- **Slug**: `welkar-sunray-teal-dial-silver-metal-strap`
+- **URL**: https://www.welkar.in/product/welkar-sunray-teal-dial-silver-metal-strap
+- **Price**: ₹899.00 (Compare at: ₹1,799.00)
+- **Caliber**: Japanese Three-Hand Quartz
+- **Case**: 42mm Polished Stainless Steel (Silver)
+- **Dial**: Metallic sunburst iridescent teal with polished indices
+- **Strap**: Solid Stainless Steel multi-link
+- **Water Resistance**: 30M / 3 ATM
+- **Warranty**: 2-Year Movement Warranty
+
+### Product 7: Welkar Executive Steel Chrono Dial
+- **Slug**: `welkar-executive-steel-chrono-dial`
+- **URL**: https://www.welkar.in/product/welkar-executive-steel-chrono-dial
+- **Price**: ₹849.00 (Compare at: ₹1,699.00)
+- **Caliber**: Quartz Chronograph with sub-second registers
+- **Case**: 44mm 316L Brushed Stainless Steel
+- **Dial**: Multi-tier executive silver-white dial
+- **Strap**: Stainless Steel link bracelet with fold-over safety clasp
+- **Water Resistance**: 30M / 3 ATM
+- **Warranty**: 2-Year Movement Warranty
+
+### Product 8: Welkar Black-Out Sport Racer with Tachymeter Bezel
+- **Slug**: `welkar-black-out-sport-racer`
+- **URL**: https://www.welkar.in/product/welkar-black-out-sport-racer
+- **Price**: ₹949.00 (Compare at: ₹1,899.00)
+- **Caliber**: High-Impact Shock-Resistant Quartz
+- **Case**: 44mm Non-reflective Matte Black PVD
+- **Dial**: Motorsport-inspired black with tachymeter speed scale
+- **Strap**: Breathable perforated silicone rubber
+- **Water Resistance**: 50M / 5 ATM (Swimming & high-humidity safe)
+- **Warranty**: 2-Year Movement Warranty
+
+### Product 9: Welkar Youth Dual-Display Chrono Sport - Arctic Blue
+- **Slug**: `welkar-youth-dual-display-chrono-sport-arctic-blue`
+- **URL**: https://www.welkar.in/product/welkar-youth-dual-display-chrono-sport-arctic-blue
+- **Price**: ₹599.00 (Compare at: ₹1,199.00)
+- **Caliber**: Dual Digital-Analog Quartz
+- **Case**: 38mm Drop-Safe Impact-Absorbing Resin
+- **Display**: Analog hands + LCD digital screen with EL backlight
+- **Strap**: Non-toxic flexible TPU resin (Arctic Blue)
+- **Water Resistance**: 50M / 5 ATM (Pool swimming & bath safe)
+- **Warranty**: 2-Year Movement Warranty
+
+### Product 10: Welkar Junior Shock-Guard Digital LED - Blaze Orange
+- **Slug**: `welkar-junior-shock-guard-digital-led-blaze-orange`
+- **URL**: https://www.welkar.in/product/welkar-junior-shock-guard-digital-led-blaze-orange
+- **Price**: ₹499.00 (Compare at: ₹999.00)
+- **Caliber**: Digital LED Quartz with alarm & stopwatch
+- **Case**: 36mm Shock-Guard Protective Resin (Blaze Orange)
+- **Strap**: Soft food-grade silicone rubber
+- **Water Resistance**: 50M / 5 ATM (Drop & water safe)
+- **Warranty**: 2-Year Movement Warranty
+
+## 3. Brand Portfolio Representation
+- **Welkar**: Flagship private-label watch brand offering direct-to-consumer horological value.
+- **Titan**: Official distribution of Titan analog and chronograph timepieces.
+- **Casio**: Vintage and digital timekeeping series.
+- **Fossil**: Automatic mechanical and lifestyle timepieces.
+- **Timex**: Classic military and field timepieces.
+
+## 4. Consumer Guarantees & Operations
+- **Pan-India Insured Dispatch**: Dispatched in tamper-evident sealed packaging within 24 to 48 hours; delivery in 3 to 5 business days via tier-1 couriers.
+- **Cash on Delivery**: Supported across 26,000+ Indian pincodes with open-box verification options.
+- **Returns**: 7-Day doorstep pickup and replacement for defective or mismatched items.
+- **Warranty Fulfillment**: Serviced directly through registered serialized cards.

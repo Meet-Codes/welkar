@@ -1,0 +1,10 @@
+/storage/logs/*.log
+/storage/private/*
+/storage/invoices/*.pdf
+/storage/imports/*
+/storage/backups/*
+/storage/uploads/*
+!.gitkeep
+.env
+.DS_Store
+Thumbs.db
