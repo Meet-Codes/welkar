@@ -6,7 +6,6 @@
 /storage/uploads/*
 /storage/sessions/*
 !.gitkeep
-.env
 .DS_Store
 Thumbs.db
 *.zip
