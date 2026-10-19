@@ -18,10 +18,11 @@ class CustomerAuthService
         $otp = (string)random_int(100000, 999999);
 
         // Store challenge with 10 minute expiry
+        $expiresAt = date('Y-m-d H:i:s', strtotime('+10 minutes'));
         Database::execute(
             "INSERT INTO otp_challenges (identifier, otp_code, type, expires_at)
-             VALUES (?, ?, 'login', DATE_ADD(NOW(), INTERVAL 10 MINUTE))",
-            [$cleanPhone, $otp]
+             VALUES (?, ?, 'login', ?)",
+            [$cleanPhone, $otp, $expiresAt]
         );
 
         // Check environment before providing debug OTP (Never leak in production)

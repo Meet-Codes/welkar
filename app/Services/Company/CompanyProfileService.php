@@ -185,7 +185,7 @@ class CompanyProfileService
 
         foreach ($fields as $f) {
             if (isset($data[$f])) {
-                $sets[] = "`{$f}` = ?";
+                $sets[] = "{$f} = ?";
                 $params[] = trim((string)$data[$f]);
             }
         }

@@ -13,13 +13,27 @@ class Database
     {
         if (self::$pdo === null) {
             $config = Config::get('database');
-            $dsn = sprintf(
-                'mysql:host=%s;port=%d;dbname=%s;charset=%s',
-                $config['host'],
-                $config['port'],
-                $config['database'],
-                $config['charset']
-            );
+            $driver = $config['driver'] ?? 'pgsql';
+
+            if ($driver === 'pgsql') {
+                $dsnParts = [
+                    "host={$config['host']}",
+                    "port={$config['port']}",
+                    "dbname={$config['database']}"
+                ];
+                if (!empty($config['sslmode'])) {
+                    $dsnParts[] = "sslmode={$config['sslmode']}";
+                }
+                $dsn = "pgsql:" . implode(';', $dsnParts);
+            } else {
+                $dsn = sprintf(
+                    'mysql:host=%s;port=%d;dbname=%s;charset=%s',
+                    $config['host'],
+                    $config['port'],
+                    $config['database'],
+                    $config['charset'] ?? 'utf8mb4'
+                );
+            }
 
             try {
                 self::$pdo = new PDO(
@@ -36,6 +50,16 @@ class Database
         }
 
         return self::$pdo;
+    }
+
+    public static function driver(): string
+    {
+        return Config::get('database.driver', 'pgsql');
+    }
+
+    public static function isPgsql(): bool
+    {
+        return self::driver() === 'pgsql';
     }
 
     public static function query(string $sql, array $params = []): array
@@ -68,6 +92,17 @@ class Database
     public static function insert(string $sql, array $params = []): string|false
     {
         $pdo = self::connect();
+
+        if (self::isPgsql()) {
+            if (!preg_match('/\bRETURNING\b/i', $sql)) {
+                $sql .= ' RETURNING id';
+            }
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute($params);
+            $val = $stmt->fetchColumn();
+            return $val !== false ? (string)$val : $pdo->lastInsertId();
+        }
+
         $stmt = $pdo->prepare($sql);
         $stmt->execute($params);
         return $pdo->lastInsertId();

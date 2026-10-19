@@ -94,7 +94,11 @@ class AnalyticsService
 
         $dateCondition = function(string $table = '') use ($days) {
             $col = $table ? "{$table}.created_at" : "created_at";
-            return ($days === 0) ? "DATE({$col}) = CURDATE()" : "{$col} >= DATE_SUB(NOW(), INTERVAL {$days} DAY)";
+            if ($days === 0) {
+                return "DATE({$col}) = CURRENT_DATE";
+            }
+            $threshold = date('Y-m-d H:i:s', strtotime("-{$days} days"));
+            return "{$col} >= '{$threshold}'";
         };
 
         $baseWhere = $dateCondition();

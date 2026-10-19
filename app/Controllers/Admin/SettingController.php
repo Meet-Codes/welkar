@@ -38,11 +38,13 @@ class SettingController
         foreach ($keys as $k) {
             $val = $request->input($k);
             if ($val !== null) {
-                Database::execute(
-                    "INSERT INTO store_settings (setting_key, setting_value) VALUES (?, ?)
-                     ON DUPLICATE KEY UPDATE setting_value = VALUES(setting_value)",
-                    [$k, trim((string)$val)]
-                );
+                $trimmedVal = trim((string)$val);
+                $existing = Database::fetch("SELECT id FROM store_settings WHERE setting_key = ? LIMIT 1", [$k]);
+                if ($existing) {
+                    Database::execute("UPDATE store_settings SET setting_value = ? WHERE setting_key = ?", [$trimmedVal, $k]);
+                } else {
+                    Database::execute("INSERT INTO store_settings (setting_key, setting_value) VALUES (?, ?)", [$k, $trimmedVal]);
+                }
             }
         }
 

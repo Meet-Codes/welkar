@@ -74,7 +74,7 @@ class InvoiceService
                 "INSERT INTO invoices (
                     order_id, invoice_number, invoice_date, total_taxable,
                     total_cgst, total_sgst, total_igst, grand_total, created_at
-                ) VALUES (?, ?, CURDATE(), ?, ?, ?, ?, ?, NOW())",
+                ) VALUES (?, ?, CURRENT_DATE, ?, ?, ?, ?, ?, NOW())",
                 [
                     $orderId, $invoiceNum, $totalTaxable,
                     $totalCgst, $totalSgst, $totalIgst, $grandTotal

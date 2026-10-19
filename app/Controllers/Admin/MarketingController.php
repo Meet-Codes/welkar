@@ -14,15 +14,18 @@ class MarketingController
     {
         $coupons = Database::query("SELECT * FROM coupons ORDER BY id DESC");
         $banners = Database::query("SELECT * FROM banners ORDER BY display_order ASC");
+        $oneHourAgo = date('Y-m-d H:i:s', strtotime('-1 hour'));
         $abandonedCarts = Database::query(
-            "SELECT c.*, COUNT(ci.id) AS items_count, SUM(ci.quantity * ci.unit_price) AS cart_value,
+            "SELECT c.id, c.user_id, c.session_id, c.created_at, c.updated_at,
+                    COUNT(ci.id) AS items_count, SUM(ci.quantity * ci.unit_price) AS cart_value,
                     u.phone AS customer_phone, u.full_name AS customer_name
              FROM carts c
              JOIN cart_items ci ON c.id = ci.cart_id
              LEFT JOIN users u ON c.user_id = u.id
-             WHERE c.updated_at < DATE_SUB(NOW(), INTERVAL 1 HOUR)
-             GROUP BY c.id
-             ORDER BY c.updated_at DESC LIMIT 20"
+             WHERE c.updated_at < ?
+             GROUP BY c.id, c.user_id, c.session_id, c.created_at, c.updated_at, u.phone, u.full_name
+             ORDER BY c.updated_at DESC LIMIT 20",
+            [$oneHourAgo]
         );
 
         return View::render('admin.marketing.index', [

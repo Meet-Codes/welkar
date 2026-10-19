@@ -156,6 +156,10 @@ class CatalogService
         int $limit = 12,
         int $offset = 0
     ): array {
+        $groupConcat = Database::isPgsql()
+            ? "STRING_AGG(DISTINCT c.slug, ',')"
+            : "GROUP_CONCAT(DISTINCT c.slug SEPARATOR ',')";
+
         $sql = "SELECT p.*, b.name AS brand_name, b.slug AS brand_slug,
                        COALESCE(pi.image_url, '/assets/images/products/placeholder.jpg') AS primary_image,
                        COALESCE(SUM(s.quantity), 0) AS total_stock,
@@ -163,7 +167,7 @@ class CatalogService
                        MIN(pv.price) AS display_price,
                        COALESCE(AVG(r.rating), 5.0) AS avg_rating,
                        COUNT(r.id) AS review_count,
-                       GROUP_CONCAT(DISTINCT c.slug SEPARATOR ',') AS category_slugs
+                       {$groupConcat} AS category_slugs
                 FROM products p
                 JOIN brands b ON p.brand_id = b.id
                 LEFT JOIN product_variants pv ON p.id = pv.product_id AND pv.is_active = 1
@@ -173,7 +177,7 @@ class CatalogService
                 LEFT JOIN product_categories pc ON p.id = pc.product_id
                 LEFT JOIN categories c ON pc.category_id = c.id
                 {$whereClause}
-                GROUP BY p.id
+                GROUP BY p.id, b.name, b.slug, pi.image_url
                 {$orderBy}
                 LIMIT {$limit} OFFSET {$offset}";
 

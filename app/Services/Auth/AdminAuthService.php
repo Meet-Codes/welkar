@@ -21,10 +21,11 @@ class AdminAuthService
         // Check if MFA is enabled
         if ((bool)$admin['mfa_enabled']) {
             $code = (string)random_int(100000, 999999);
+            $expiresAt = date('Y-m-d H:i:s', strtotime('+15 minutes'));
             Database::execute(
                 "INSERT INTO admin_mfa_challenges (admin_user_id, code, expires_at)
-                 VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 15 MINUTE))",
-                [$admin['id'], $code]
+                 VALUES (?, ?, ?)",
+                [$admin['id'], $code, $expiresAt]
             );
 
             Session::set('admin_mfa_user_id', $admin['id']);

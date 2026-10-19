@@ -28,10 +28,11 @@ class InventoryService
                 [$quantity, $stock['id']]
             );
 
+            $expiresAt = date('Y-m-d H:i:s', strtotime("+{$ttlMinutes} minutes"));
             Database::execute(
                 "INSERT INTO inventory_reservations (variant_id, session_id, quantity, expires_at, status)
-                 VALUES (?, ?, ?, DATE_ADD(NOW(), INTERVAL ? MINUTE), 'active')",
-                [$variantId, $sessionId, $quantity, $ttlMinutes]
+                 VALUES (?, ?, ?, ?, 'active')",
+                [$variantId, $sessionId, $quantity, $expiresAt]
             );
 
             return true;
