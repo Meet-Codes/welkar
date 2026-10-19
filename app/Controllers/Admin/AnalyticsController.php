@@ -32,7 +32,7 @@ class AnalyticsController
              JOIN brands b ON p.brand_id = b.id
              JOIN orders o ON oi.order_id = o.id
              WHERE o.status != 'cancelled'
-             GROUP BY b.id
+             GROUP BY b.id, b.name
              ORDER BY total_revenue DESC"
         );
 

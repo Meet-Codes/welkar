@@ -23,7 +23,7 @@ class ProductController
              LEFT JOIN product_variants pv ON p.id = pv.product_id
              LEFT JOIN product_images pi ON p.id = pi.product_id AND pi.is_primary = 1
              LEFT JOIN inventory_stock s ON pv.id = s.variant_id
-             GROUP BY p.id
+             GROUP BY p.id, b.name, pi.image_url
              ORDER BY p.id DESC"
         );
 

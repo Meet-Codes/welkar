@@ -239,7 +239,7 @@ class CatalogService
              LEFT JOIN product_images pi ON p.id = pi.product_id AND pi.is_primary = 1
              LEFT JOIN product_variants pv ON p.id = pv.product_id
              WHERE p.is_active = 1 AND (p.brand_id = ? OR p.dial_type = ?) AND p.id != ?
-             GROUP BY p.id
+             GROUP BY p.id, b.name, pi.image_url
              LIMIT 4",
             [$product['brand_id'], $product['dial_type'], $product['id']]
         );
